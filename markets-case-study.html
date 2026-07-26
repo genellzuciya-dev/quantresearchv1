@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Field Study 02 — Markets &amp; Markov Chains | Nexus Lab Space</title>
+<title>Field Study 01 — Markets &amp; Markov Chains | Nexus Lab Space</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -307,8 +307,8 @@
   <div class="hero">
     <div class="wrap">
       <div class="hero-text">
-        <span class="eyebrow">Field Study 02 &nbsp;&middot;&nbsp; 2026.07.26</span>
-        <h1>Four times the instrument <em>answered for me</em></h1>
+        <span class="eyebrow">Field Study 01 &nbsp;&middot;&nbsp; 2026.07.23&ndash;24</span>
+        <h1>Five times the instrument <em>answered for me</em></h1>
         <p class="deck">A taster round in quantitative finance &mdash; Markov regimes,
           gap statistics, and a backtest, run as four parallel sandboxes. Every
           confident result I got turned out to be a property of the tool that
@@ -450,7 +450,7 @@
   <section class="reveal">
     <div class="wrap two-col">
       <div>
-        <span class="eyebrow">03 / Four Useful Mistakes</span>
+        <span class="eyebrow">03 / Five Useful Mistakes</span>
         <h2>Every one of them was <em>fluent and wrong.</em></h2>
         <p class="pull">Noise reproduced my headline result almost exactly. The regimes
           were a property of the smoother.</p>
@@ -488,6 +488,16 @@
           it turned up 66 corrupted rows &mdash; gaps of +989,900%, the same impossible
           value repeating, sub-penny rounding masquerading as price moves. Cleaning them
           cut the sector's apparent edge by sixty percent and it was withdrawn.</p>
+        <p><strong>A report with nothing behind it.</strong> The exit-side study
+          rendered a clean dashboard: twelve gap sessions, every peak in the morning,
+          an average of 9% given back. Twelve different dates &mdash; and every row
+          identical to the last decimal. It was a placeholder render, not a result. The
+          one genuine session the tool found looked far less convincing than the
+          fabricated twelve.</p>
+        <p class="tbl-note" style="margin-top:-0.4rem">The first four mistakes were
+          arithmetic producing confident output. This one is confident output with no
+          arithmetic behind it &mdash; the failure that survives a code review, because
+          the code isn't what's wrong.</p>
         <p><strong>Nothing in any pipeline flagged any of this.</strong> Every script ran
           clean and printed a confident answer. The check that caught each one was
           asking what the number would look like if there were nothing there.</p>
@@ -549,6 +559,9 @@
           well below what random entry produces. <strong>The entry isn't uninformative,
           it's anti-predictive</strong> &mdash; buying after two up bars on 2-minute
           data is systematically buying local tops.</p>
+        <p>The exit side never got further than that. Yahoo's intraday history reaches
+          back sixty days, which yielded exactly one qualifying gap session to study &mdash;
+          which is why this page has a measured entry filter and no exit rule.</p>
         <p>That is a more useful outcome than a flat result, and it only exists because
           the held-out half was written before the rule was. A rule that only wins on the
           data it was designed on is a fantasy, and the temptation to tune until the
@@ -625,9 +638,9 @@
         history, so results accumulate instead of overwriting. Code and full output are public.</p>
       <div class="btn-row">
         <!-- UPDATE THESE LINKS once the repo is live -->
-        <a class="btn-lime" href="#">Open the regime dashboard</a>
-        <a class="btn-ghost" href="#">Backtest &amp; held-out results &rarr;</a>
-        <a class="btn-ghost" href="#">Code &amp; full write-up &rarr;</a>
+        <a class="btn-lime" href="https://genellzuciya-dev.github.io/quantresearchv1/markov_regimes.html">Open the regime dashboard</a>
+        <a class="btn-ghost" href="https://genellzuciya-dev.github.io/quantresearchv1/markov_intraday.html">Backtest &amp; held-out results &rarr;</a>
+        <a class="btn-ghost" href="https://github.com/genellzuciya-dev/quantresearchv1">Code &amp; full write-up &rarr;</a>
       </div>
     </div>
   </section>
