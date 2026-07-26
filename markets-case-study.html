@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Field Study 01 — Markets &amp; Markov Chains | Nexus Lab Space</title>
+<title>Field Study 01 — A Quant Finance Sandbox | Nexus Lab Space</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -308,13 +308,13 @@
     <div class="wrap">
       <div class="hero-text">
         <span class="eyebrow">Field Study 01 &nbsp;&middot;&nbsp; 2026.07.23&ndash;24</span>
-        <h1>Five times the instrument <em>answered for me</em></h1>
-        <p class="deck">A taster round in quantitative finance &mdash; Markov regimes,
-          gap statistics, and a backtest, run as four parallel sandboxes. Every
-          confident result I got turned out to be a property of the tool that
-          measured it, and finding that out was the whole education.</p>
+        <h1>Markov chains, supernovas, and financial systems: <em>a quant sandbox</em></h1>
+        <p class="deck">A taster round in quantitative finance. Six market systems mapped
+          by correlation and regime, then a narrowing onto four sectors and the violent
+          high-volume gap-ups worth trading &mdash; and, five separate times, an
+          instrument that answered before the market did.</p>
         <div class="meta">
-          <span>82 tickers &middot; 2 years</span>
+          <span>6 systems &middot; 82 tickers</span>
           <span>Python &middot; pandas &middot; statsmodels</span>
           <span>Markov chains &middot; permutation tests</span>
           <span>Four sandboxes</span>
@@ -341,8 +341,9 @@
       <span class="eyebrow">Skills Applied</span>
       <dl class="skills-strip">
         <dt>Market Structure</dt>
-        <dd>Base rates before signals<span class="sep">/</span>Regime
-          stability<span class="sep">/</span>Catalyst independence</dd>
+        <dd>Correlation as concentration<span class="sep">/</span>Base rates before
+          signals<span class="sep">/</span>Regime stability<span class="sep">/</span>Catalyst
+          independence</dd>
         <dt>Quantitative Modeling</dt>
         <dd>Markov transition matrices<span class="sep">/</span>Null
           construction<span class="sep">/</span>Interval discipline</dd>
@@ -392,7 +393,8 @@
       <div>
         <p>I wanted to know what quantitative research feels like from the inside, so
           I picked a question small enough to finish: when a stock opens sharply
-          higher on heavy volume, does the move continue through the session or fade?</p>
+          higher on heavy volume &mdash; a <strong>supernova</strong>, in day-trading
+          shorthand &mdash; does the move continue through the session or fade?</p>
         <p>Four sectors, four identical sandboxes, deliberately unlike each other &mdash;
           small-cap biotech, small-cap AI, cannabis, and bitcoin miners. Alongside it, a
           Markov chain study labeling each day into a market state, and a small
@@ -505,11 +507,54 @@
     </div>
   </section>
 
+  <!-- ============ THE SYSTEM MAP ============ -->
+  <section class="reveal">
+    <div class="wrap two-col">
+      <div>
+        <span class="eyebrow">04 / The System Map</span>
+        <h2>Six baskets that turned out to be <em>one bet each</em></h2>
+        <p class="pull">A rail portfolio is not six positions. It is one position held
+          six times.</p>
+      </div>
+      <div>
+        <p>Before narrowing to single stocks, I mapped six systems &mdash; rail and freight,
+          AI compute, the coffee chain, the cocoa chain, grain, and irrigation &mdash; by
+          daily return correlation, lead-lag structure, and a two-state Markov switching
+          model fitted in statsmodels rather than labeled by hand.</p>
+        <table class="data">
+          <thead>
+            <tr><th>Correlation</th><th>Pair</th><th>r</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Rail, tightest</td><td>UNP &middot; NSC</td><td class="hi">+0.82</td></tr>
+            <tr><td>AI compute</td><td>NVDA &middot; TSM</td><td class="hi">+0.71</td></tr>
+            <tr><td>Chocolate vs cocoa</td><td>HSY &middot; CC=F</td><td class="hi">&minus;0.19</td></tr>
+            <tr><td>Rail vs grain</td><td>UNP &middot; ZC=F</td><td>&minus;0.07</td></tr>
+          </tbody>
+        </table>
+        <p class="tbl-note">Two years of daily returns, 501 sessions per name.</p>
+        <p style="margin-top:2rem">The negative one is the most legible. Hershey moves
+          <em>against</em> the cocoa price, because cocoa is a cost to Hershey rather than a
+          shared revenue driver &mdash; the pass-through relationship showing up cleanly in
+          correlation alone.</p>
+        <p><strong>The rail number is the one that changes how you'd hold a portfolio.</strong>
+          At +0.82 and +0.77 between the majors, owning UNP, CSX and NSC is not
+          diversification within a sector. It is concentration wearing a portfolio's
+          clothes.</p>
+        <p>I had also written a prediction into the code before running it: if UNP
+          correlates more with grain than with its own rail peers, the rail anchor is
+          really a grain proxy. It isn't. UNP sits at +0.82 with NSC and between
+          &minus;0.07 and 0.00 with corn, soy and wheat. The hypothesis was clean, testable,
+          and wrong.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ WHAT I PREDICTED ============ -->
   <section class="reveal">
     <div class="wrap two-col">
       <div>
-        <span class="eyebrow">04 / A Prediction, Tested</span>
+        <span class="eyebrow">05 / A Prediction, Tested</span>
         <h2>Right about the structure. Wrong about <em>what it buys.</em></h2>
       </div>
       <div>
@@ -537,7 +582,7 @@
   <section class="reveal">
     <div class="wrap two-col">
       <div>
-        <span class="eyebrow">05 / The Backtest</span>
+        <span class="eyebrow">06 / The Backtest</span>
         <h2>The rule lost. <em>The split is why I believe it.</em></h2>
       </div>
       <div>
@@ -573,7 +618,7 @@
   <!-- ============ NEXT ============ -->
   <section class="reveal">
     <div class="wrap">
-      <span class="eyebrow">06 / Open Threads</span>
+      <span class="eyebrow">07 / Open Threads</span>
       <h2>What would make this <em>real</em></h2>
       <div class="steps">
         <div class="step">
@@ -639,6 +684,7 @@
       <div class="btn-row">
         <!-- UPDATE THESE LINKS once the repo is live -->
         <a class="btn-lime" href="https://genellzuciya-dev.github.io/quantresearchv1/markov_regimes.html">Open the regime dashboard</a>
+        <a class="btn-ghost" href="https://genellzuciya-dev.github.io/quantresearchv1/system_map.html">System map &rarr;</a>
         <a class="btn-ghost" href="https://genellzuciya-dev.github.io/quantresearchv1/markov_intraday.html">Backtest &amp; held-out results &rarr;</a>
         <a class="btn-ghost" href="https://github.com/genellzuciya-dev/quantresearchv1">Code &amp; full write-up &rarr;</a>
       </div>
@@ -655,6 +701,13 @@
         <thead><tr><th>Skill</th><th>What I did with it</th></tr></thead>
         <tbody>
           <tr class="grp"><td colspan="2">Market Structure</td></tr>
+          <tr>
+            <td>Correlation as concentration</td>
+            <td>Mapped six market systems by daily return correlation and lead-lag
+              structure. A thesis basket whose members correlate at +0.82 is one bet held
+              several times &mdash; the same variable that makes the thesis coherent is
+              what makes the portfolio undiversified.</td>
+          </tr>
           <tr>
             <td>Base rates before signals</td>
             <td>Measured what each basket does on an ordinary day &mdash; 42 to 48% of
