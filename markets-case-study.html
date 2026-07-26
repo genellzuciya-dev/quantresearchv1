@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Field Study 02 — Markets &amp; Markov Chains | Nexus Lab Space</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Serif:ital@0;1&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Nexus Lab Space — Field Study page
+   Tokens lifted from the live nexuslabspace.com build so this
+   drops in as a continuation of sections 01–04.
+   Everything is scoped to #nls-markets so it is safe to embed.
+   ============================================================ */
+#nls-markets {
+  --bg:        #060C08;
+  --bg-lift:   #0B140E;
+  --lime:      #B6FF4A;
+  --lime-dim:  #7EC431;
+  --cream:     #F2EDDF;
+  --muted:     #8A8478;
+  --faint:     #5E5A52;
+  --border:    rgba(182,255,74,0.18);
+  --glow:      rgba(182,255,74,0.07);
+
+  /* volume-tier palette — the only non-brand color on this page,
+     because here the color IS the data: cold = quiet tape, hot = heavy */
+  --t1:        #2C6FB5;
+  --t2:        #3E8E7E;
+  --t3:        #159C3C;
+  --t4:        #E8600F;
+  --t5:        #C42B1C;
+
+  background: var(--bg);
+  color: var(--cream);
+  font-family: 'Instrument Serif', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+#nls-markets *, #nls-markets *::before, #nls-markets *::after { box-sizing: border-box; }
+#nls-markets img { max-width: 100%; display: block; }
+
+/* ---------- shared type ---------- */
+#nls-markets .wrap { max-width: 1080px; margin: 0 auto; padding: 0 2.5rem; }
+#nls-markets .eyebrow {
+  font-family: 'Space Mono', monospace; font-size: 0.62rem; letter-spacing: 0.3em;
+  text-transform: uppercase; color: var(--lime); display: block; margin-bottom: 1.1rem;
+}
+#nls-markets h1 {
+  font-family: 'Syne', sans-serif; font-weight: 800;
+  font-size: clamp(2.6rem, 6.2vw, 5.4rem); line-height: 0.96; letter-spacing: -0.025em;
+  color: var(--cream); margin: 0 0 1.6rem; max-width: 15ch;
+}
+#nls-markets h2 {
+  font-family: 'Syne', sans-serif; font-weight: 800;
+  font-size: clamp(1.7rem, 3.4vw, 2.7rem); line-height: 1.06; letter-spacing: -0.02em;
+  color: var(--cream); margin: 0 0 1.5rem; max-width: 20ch;
+}
+#nls-markets h1 em, #nls-markets h2 em {
+  font-family: 'Instrument Serif', serif; font-style: italic; color: var(--lime);
+}
+#nls-markets p { font-size: 1.02rem; line-height: 1.82; color: var(--muted); margin: 0 0 1.15rem; max-width: 60ch; }
+#nls-markets p strong { color: var(--cream); font-weight: 400; }
+#nls-markets section { padding: 6.5rem 0; border-top: 1px solid var(--border); }
+
+/* ---------- hero ---------- */
+#nls-markets .hero { padding: 7rem 0 4.5rem; border-top: none; position: relative; }
+#nls-markets .hero::before {
+  content: ""; position: absolute; inset: -30% 40% 30% -20%;
+  background: radial-gradient(closest-side, rgba(30,60,35,0.55), transparent 70%);
+  pointer-events: none;
+}
+#nls-markets .hero .wrap {
+  position: relative;
+  display: grid; grid-template-columns: minmax(0, 1fr) auto;
+  gap: 4rem; align-items: center;
+}
+
+/* circular photo pocket */
+#nls-markets .portrait-fig { margin: 0; }
+#nls-markets .portrait {
+  width: clamp(190px, 23vw, 280px); aspect-ratio: 1 / 1; border-radius: 50%;
+  border: 1px dashed var(--border); background: var(--bg-lift);
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden; position: relative;
+  /* thin offset ring — box-shadow isn't clipped by overflow:hidden */
+  box-shadow: 0 0 0 1px var(--bg), 0 0 0 11px rgba(182, 255, 74, 0.10);
+}
+#nls-markets .portrait img { width: 100%; height: 100%; object-fit: cover; }
+#nls-markets .portrait span {
+  font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--faint); text-align: center; line-height: 1.9;
+}
+#nls-markets .portrait-fig figcaption { text-align: center; }
+
+#nls-markets .deck {
+  font-size: 1.16rem; line-height: 1.7; color: var(--muted); max-width: 46ch; margin-bottom: 2.6rem;
+}
+#nls-markets .meta {
+  font-family: 'Space Mono', monospace; font-size: 0.62rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--faint); display: flex; flex-wrap: wrap; gap: 0.6rem 1.6rem;
+}
+
+/* ---------- tables ---------- */
+#nls-markets table { width: 100%; border-collapse: collapse; }
+#nls-markets th {
+  font-family: 'Space Mono', monospace; font-size: 0.57rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--lime); font-weight: 400; text-align: right;
+  padding: 0 0 0.9rem; border-bottom: 1px solid var(--border); white-space: nowrap;
+}
+#nls-markets th:first-child { text-align: left; }
+#nls-markets td {
+  padding: 0.9rem 0; border-bottom: 1px solid rgba(182,255,74,0.09);
+  vertical-align: top;
+}
+
+/* compact skills strip (top of page) */
+#nls-markets .skills-strip {
+  display: grid; grid-template-columns: 11rem 1fr; gap: 1rem 2rem;
+  align-items: baseline; margin: 1.8rem 0 0;
+}
+#nls-markets .skills-strip dt {
+  font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.22em;
+  text-transform: uppercase; color: var(--lime);
+}
+#nls-markets .skills-strip dd {
+  margin: 0; font-family: 'Instrument Serif', serif; font-size: 1.08rem;
+  color: var(--cream); line-height: 1.55;
+}
+#nls-markets .skills-strip .sep { color: var(--lime); padding: 0 0.55rem; }
+#nls-markets .tbl-wrap { overflow-x: auto; }
+
+/* grouped takeaways table */
+#nls-markets table.take { margin-top: 2rem; }
+#nls-markets table.take td { font-family: 'Instrument Serif', serif; }
+#nls-markets table.take td:first-child { font-size: 1rem; color: var(--cream); padding-right: 2.5rem; width: 46%; }
+#nls-markets table.take td:last-child { font-size: 0.95rem; color: var(--muted); line-height: 1.55; }
+#nls-markets table.take tr.grp td {
+  font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.24em;
+  text-transform: uppercase; color: var(--lime); padding: 2rem 0 0.7rem;
+  border-bottom: 1px solid var(--border);
+}
+#nls-markets table.take tr.grp:first-child td { padding-top: 0.6rem; }
+
+/* numeric data tables */
+#nls-markets table.data { margin-top: 2.2rem; }
+#nls-markets table.data td {
+  font-family: 'Space Mono', monospace; font-size: 0.78rem; color: var(--cream);
+  text-align: right; font-variant-numeric: tabular-nums;
+}
+#nls-markets table.data td:first-child {
+  text-align: left; font-family: 'Instrument Serif', serif; font-size: 0.98rem;
+  color: var(--muted);
+}
+#nls-markets table.data .hi { color: var(--lime); }
+#nls-markets .tbl-note {
+  font-family: 'Space Mono', monospace; font-size: 0.58rem; line-height: 1.7;
+  color: var(--faint); letter-spacing: 0.03em; margin: 0.9rem 0 0; max-width: none;
+}
+
+/* ---------- SIGNATURE: the year band ---------- */
+#nls-markets .band-block { padding-top: 1rem; }
+#nls-markets .band {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px;
+  margin-bottom: 0.7rem;
+}
+#nls-markets .band button {
+  all: unset; cursor: pointer; height: 74px; border-radius: 2px;
+  position: relative; opacity: 0.42; transition: opacity 220ms ease, transform 220ms ease;
+}
+#nls-markets .band button:hover,
+#nls-markets .band button:focus-visible { opacity: 1; transform: translateY(-4px); }
+#nls-markets .band button[aria-pressed="true"] { opacity: 1; }
+#nls-markets .band button:focus-visible { outline: 2px solid var(--lime); outline-offset: 3px; }
+#nls-markets .band .m-t1 { background: var(--t1); }
+#nls-markets .band .m-t2 { background: var(--t2); }
+#nls-markets .band .m-t3 { background: var(--t3); }
+#nls-markets .band .m-t4 { background: var(--t4); }
+#nls-markets .band .m-t5 { background: var(--t5); }
+#nls-markets .band-labels {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 6px;
+  font-family: 'Space Mono', monospace; font-size: 0.56rem; letter-spacing: 0.1em;
+  color: var(--faint); text-align: center; margin-bottom: 2.4rem;
+}
+
+#nls-markets .readout {
+  border-left: 3px solid var(--lime); background: var(--glow);
+  padding: 1.5rem 1.8rem; max-width: 560px;
+}
+#nls-markets .readout-head {
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 0.94rem;
+  letter-spacing: 0.02em; margin-bottom: 1rem; color: var(--cream);
+}
+#nls-markets .readout-head span { color: var(--lime); }
+#nls-markets .bar-row { margin-bottom: 0.75rem; }
+#nls-markets .bar-top {
+  display: flex; justify-content: space-between; align-items: baseline;
+  font-family: 'Space Mono', monospace; font-size: 0.68rem; color: var(--muted);
+  margin-bottom: 4px; letter-spacing: 0.04em;
+}
+#nls-markets .bar-track { height: 5px; background: rgba(242,237,223,0.10); border-radius: 3px; overflow: hidden; }
+#nls-markets .bar-fill { height: 100%; border-radius: 3px; transition: width 320ms cubic-bezier(.2,.7,.3,1); }
+#nls-markets .readout-note {
+  font-family: 'Space Mono', monospace; font-size: 0.6rem; line-height: 1.7;
+  color: var(--faint); margin: 1rem 0 0; letter-spacing: 0.03em; max-width: none;
+}
+
+/* ---------- finding ---------- */
+#nls-markets .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 4.5rem; align-items: start; }
+#nls-markets .pull {
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.32rem; line-height: 1.42;
+  color: var(--cream); border-left: 3px solid var(--lime); padding-left: 1.4rem; margin: 2rem 0 0;
+  max-width: none;
+}
+
+/* ---------- next steps ---------- */
+#nls-markets .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.6rem; margin-top: 3rem; }
+#nls-markets .step-num {
+  font-family: 'Space Mono', monospace; font-size: 0.62rem; letter-spacing: 0.24em;
+  color: var(--lime); display: block; margin-bottom: 0.8rem;
+}
+#nls-markets .step h3 {
+  font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.04rem;
+  color: var(--cream); margin: 0 0 0.7rem; line-height: 1.3;
+}
+#nls-markets .step p { font-size: 0.93rem; line-height: 1.72; margin: 0; }
+
+/* ---------- photo slots ---------- */
+#nls-markets .plates { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; margin-top: 2.8rem; }
+#nls-markets .plate {
+  aspect-ratio: 4 / 5; border: 1px dashed var(--border); background: var(--bg-lift);
+  display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden;
+}
+#nls-markets .plate img { width: 100%; height: 100%; object-fit: cover; }
+#nls-markets .plate span {
+  font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--faint); text-align: center; padding: 1rem;
+}
+#nls-markets .plate-cap {
+  font-family: 'Space Mono', monospace; font-size: 0.58rem; letter-spacing: 0.14em;
+  color: var(--faint); margin-top: 0.7rem; text-transform: uppercase;
+}
+
+/* ---------- CTA ---------- */
+#nls-markets .btn-row { display: flex; flex-wrap: wrap; gap: 1rem 1.4rem; align-items: center; margin-top: 2.4rem; }
+#nls-markets .btn-lime {
+  font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.2em;
+  text-transform: uppercase; color: var(--bg); background: var(--lime);
+  padding: 0.95rem 1.9rem; text-decoration: none; display: inline-block;
+  transition: background 180ms ease;
+}
+#nls-markets .btn-lime:hover { background: var(--cream); }
+#nls-markets .btn-ghost {
+  font-family: 'Syne', sans-serif; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--muted); text-decoration: none;
+  border-bottom: 1px solid var(--border); padding-bottom: 3px; transition: color 180ms ease;
+}
+#nls-markets .btn-ghost:hover { color: var(--lime); }
+
+/* ---------- footer ---------- */
+#nls-markets footer { padding: 3.5rem 0 4.5rem; border-top: 1px solid var(--border); }
+#nls-markets footer p {
+  font-family: 'Space Mono', monospace; font-size: 0.6rem; letter-spacing: 0.18em;
+  text-transform: uppercase; color: var(--faint); margin: 0;
+}
+
+/* ---------- reveal ---------- */
+#nls-markets .reveal { opacity: 0; transform: translateY(22px); transition: opacity 700ms ease, transform 700ms ease; }
+#nls-markets .reveal.visible { opacity: 1; transform: none; }
+
+/* ---------- responsive ---------- */
+@media (max-width: 860px) {
+  #nls-markets .wrap { padding: 0 1.5rem; }
+  #nls-markets .skills-strip { grid-template-columns: 1fr; gap: 0.4rem 0; }
+  #nls-markets .skills-strip dd { margin-bottom: 1.1rem; }
+  #nls-markets table.take td { display: block; width: auto; padding-right: 0; }
+  #nls-markets table.take td:first-child { padding-bottom: 0.3rem; border-bottom: none; }
+  #nls-markets table.take thead { display: none; }
+  #nls-markets table.data { font-size: 0.7rem; }
+  #nls-markets table.data td { font-size: 0.68rem; padding: 0.7rem 0; }
+  #nls-markets table.data td:first-child { font-size: 0.88rem; }
+  #nls-markets section { padding: 4.5rem 0; }
+  #nls-markets .hero { padding: 4.5rem 0 3rem; }
+  #nls-markets .hero .wrap { grid-template-columns: 1fr; gap: 2.8rem; justify-items: start; }
+  #nls-markets .portrait { width: 168px; box-shadow: 0 0 0 1px var(--bg), 0 0 0 8px rgba(182,255,74,0.10); }
+  #nls-markets .portrait-fig figcaption { text-align: left; }
+  #nls-markets .two-col,
+  #nls-markets .steps,
+  #nls-markets .plates { grid-template-columns: 1fr; gap: 2.4rem; }
+  #nls-markets .band button { height: 54px; }
+  #nls-markets .band-labels { font-size: 0.5rem; letter-spacing: 0; }
+  #nls-markets .plate { aspect-ratio: 3 / 2; }
+}
+@media (prefers-reduced-motion: reduce) {
+  #nls-markets *, #nls-markets *::before, #nls-markets *::after {
+    animation: none !important; transition: none !important;
+  }
+  #nls-markets .reveal { opacity: 1; transform: none; }
+}
+</style></head>
+<body style="margin:0;background:#060C08;">
+<div id="nls-markets">
+
+  <!-- ============ HERO ============ -->
+  <div class="hero">
+    <div class="wrap">
+      <div class="hero-text">
+        <span class="eyebrow">Field Study 02 &nbsp;&middot;&nbsp; 2026.07.26</span>
+        <h1>Four times the instrument <em>answered for me</em></h1>
+        <p class="deck">A taster round in quantitative finance &mdash; Markov regimes,
+          gap statistics, and a backtest, run as four parallel sandboxes. Every
+          confident result I got turned out to be a property of the tool that
+          measured it, and finding that out was the whole education.</p>
+        <div class="meta">
+          <span>82 tickers &middot; 2 years</span>
+          <span>Python &middot; pandas &middot; statsmodels</span>
+          <span>Markov chains &middot; permutation tests</span>
+          <span>Four sandboxes</span>
+        </div>
+      </div>
+
+      <!-- CIRCLE POCKET
+           To add an image, replace the <span> line below with:
+           <img src="images/markets-portrait.jpg" alt="Terminal output from the study">
+           A square-ish crop works best; it fills the circle automatically. -->
+      <figure class="portrait-fig">
+        <div class="portrait">
+          <span>Screenshot<br>coming soon</span>
+        </div>
+        <figcaption class="plate-cap">Transition matrix</figcaption>
+      </figure>
+
+    </div>
+  </div>
+
+  <!-- ============ SKILLS AT A GLANCE ============ -->
+  <section class="reveal">
+    <div class="wrap">
+      <span class="eyebrow">Skills Applied</span>
+      <dl class="skills-strip">
+        <dt>Market Structure</dt>
+        <dd>Base rates before signals<span class="sep">/</span>Regime
+          stability<span class="sep">/</span>Catalyst independence</dd>
+        <dt>Quantitative Modeling</dt>
+        <dd>Markov transition matrices<span class="sep">/</span>Null
+          construction<span class="sep">/</span>Interval discipline</dd>
+        <dt>Research Engineering</dt>
+        <dd>Held-out validation<span class="sep">/</span>Parallel
+          sandboxes<span class="sep">/</span>Data validation</dd>
+      </dl>
+      <p class="tbl-note" style="margin-top:1.6rem">Python &middot; pandas &middot;
+        NumPy &middot; statsmodels &middot; yfinance &middot; Wilson score intervals
+        &middot; permutation and surrogate testing &middot; thinkScript /
+        thinkorswim &middot; JSON run history &middot; HTML generated from Python</p>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE: VOLUME BAND ============ -->
+  <section class="band-block reveal">
+    <div class="wrap">
+      <span class="eyebrow">The Gradient, In Its Own Colors</span>
+      <div class="band" id="band" role="group" aria-label="Select a volume tier">
+        <!-- filled by script -->
+      </div>
+      <div class="band-labels">
+        <span>&lt;1.5&times;</span><span>1.5&ndash;2&times;</span><span>2&ndash;3&times;</span>
+        <span>3&ndash;5&times;</span><span>5&times;+</span>
+      </div>
+
+      <div class="readout">
+        <div class="readout-head">Continuation at <span id="ro-tier">&lt;1.5&times;</span> relative volume</div>
+        <div id="ro-bars"></div>
+        <p class="readout-note" id="ro-dir" style="color:var(--cream);font-size:0.7rem;
+           letter-spacing:0.06em;margin-top:1.1rem;"></p>
+        <p class="readout-note">Bars are the share of up-gaps that closed above their
+          open. The dashed marker on each track is that sector's ordinary-day rate &mdash;
+          what the stock does with no gap at all. Distance from the marker is the
+          signal; distance from 50% is nothing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PREMISE ============ -->
+  <section class="reveal">
+    <div class="wrap two-col">
+      <div>
+        <span class="eyebrow">01 / The Premise</span>
+        <h2>What does a quant <em>actually do</em> all day?</h2>
+      </div>
+      <div>
+        <p>I wanted to know what quantitative research feels like from the inside, so
+          I picked a question small enough to finish: when a stock opens sharply
+          higher on heavy volume, does the move continue through the session or fade?</p>
+        <p>Four sectors, four identical sandboxes, deliberately unlike each other &mdash;
+          small-cap biotech, small-cap AI, cannabis, and bitcoin miners. Alongside it, a
+          Markov chain study labeling each day into a market state, and a small
+          intraday backtest with a held-out half.</p>
+        <p><strong>The plan was to learn the tools. What I learned was how confidently
+          the tools lie.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINDING ============ -->
+  <section class="reveal">
+    <div class="wrap two-col">
+      <div>
+        <span class="eyebrow">02 / The Finding</span>
+        <h2>The fade is <em>the measurement.</em> The edge is the guess.</h2>
+        <p class="pull">A gap-up on ordinary volume is worse than an ordinary day. That
+          is the sturdiest thing in the study, and it is the opposite of what I went
+          looking for.</p>
+      </div>
+      <div>
+        <p>Continuation means the stock closed above where it opened. Measured against
+          each sector's own ordinary-day rate &mdash; not against 50%, which none of
+          these names reach:</p>
+        <table class="data">
+          <thead>
+            <tr><th>vs own baseline</th><th>Biotech</th><th>n</th><th>AI</th><th>n</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>&lt;1.5&times; volume</td><td class="hi">&minus;16.0</td><td>337</td><td class="hi">&minus;12.3</td><td>775</td></tr>
+            <tr><td>1.5&ndash;2&times;</td><td>&minus;6.1</td><td>85</td><td>+6.2</td><td>147</td></tr>
+            <tr><td>2&ndash;3&times;</td><td>+5.8</td><td>56</td><td>+11.6</td><td>133</td></tr>
+            <tr><td>3&ndash;5&times;</td><td>+21.0</td><td>32</td><td>+17.0</td><td>91</td></tr>
+            <tr><td>5&times;+</td><td>+19.9</td><td>35</td><td>+21.0</td><td>81</td></tr>
+          </tbody>
+        </table>
+        <p class="tbl-note">Percentage points against baselines of 47.8% (biotech) and
+          45.2% (AI). 1,773 gaps. Flat prints excluded.</p>
+        <p style="margin-top:2rem">Two universes with nothing in common land on the same
+          shape and nearly the same size &mdash; roughly a 35-point swing from floor to
+          ceiling. That agreement is the result.</p>
+        <p>But the two ends are not equally trustworthy. The bottom rows rest on
+          hundreds of observations. <strong>The top rows rest on thirty-two, with
+          confidence intervals thirty points wide.</strong> Split by year, biotech's
+          numbers held from 2024 to 2026 while AI's quiet-gap fade decayed until, by
+          2026, it carried no information at all.</p>
+        <p>So the honest product is a filter, not a signal: heavy volume is the only
+          condition under which the setup is worth looking at, and I have measured
+          which gaps to ignore far better than I have measured which to take.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE MISTAKES ============ -->
+  <section class="reveal">
+    <div class="wrap two-col">
+      <div>
+        <span class="eyebrow">03 / Four Useful Mistakes</span>
+        <h2>Every one of them was <em>fluent and wrong.</em></h2>
+        <p class="pull">Noise reproduced my headline result almost exactly. The regimes
+          were a property of the smoother.</p>
+      </div>
+      <div>
+        <p><strong>The regime study measured its own indicator.</strong> I labeled days
+          into states using a 20-day moving average, built transition matrices, and
+          found trends persisting about ten days with 0.90 probability &mdash; far above
+          a shuffled baseline. Then I ran the identical labeling on a synthetic random
+          walk, where regimes cannot exist:</p>
+        <table class="data">
+          <thead>
+            <tr><th>Persistence</th><th>Real (UNP)</th><th>Random walk</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Trend up</td><td>0.90</td><td class="hi">0.85</td></tr>
+            <tr><td>Trend down</td><td>0.84</td><td class="hi">0.87</td></tr>
+            <tr><td>Chop</td><td>0.60</td><td class="hi">0.49</td></tr>
+          </tbody>
+        </table>
+        <p class="tbl-note">Price stays on one side of a slow smoother for weeks by
+          construction. Shuffling the labels tests whether a sequence is ordered, not
+          whether regimes are real.</p>
+        <p style="margin-top:2rem"><strong>The volume denominator included the day it
+          measured.</strong> A twenty-day average computed with the gap day inside it
+          understates a genuine 10&times; day as 6.9&times;. One call to
+          <code>.shift(1)</code> moved every threshold in the study.</p>
+        <p><strong>A metric that quietly penalized cheap stocks.</strong> Counting a
+          close-equals-open day as a fade sounds neutral. Flat prints are a function of
+          tick size against share price: 25% of days for a stock at $0.11, none at all
+          for one at $44. The measure was biased against exactly the names this
+          strategy selects for.</p>
+        <p><strong>An entire sector built on unusable data.</strong> A mean of +14.5%
+          sitting beside a median of &minus;0.5% was the only visible symptom. Following
+          it turned up 66 corrupted rows &mdash; gaps of +989,900%, the same impossible
+          value repeating, sub-penny rounding masquerading as price moves. Cleaning them
+          cut the sector's apparent edge by sixty percent and it was withdrawn.</p>
+        <p><strong>Nothing in any pipeline flagged any of this.</strong> Every script ran
+          clean and printed a confident answer. The check that caught each one was
+          asking what the number would look like if there were nothing there.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT I PREDICTED ============ -->
+  <section class="reveal">
+    <div class="wrap two-col">
+      <div>
+        <span class="eyebrow">04 / A Prediction, Tested</span>
+        <h2>Right about the structure. Wrong about <em>what it buys.</em></h2>
+      </div>
+      <div>
+        <p>Before checking, I wrote down why I thought biotech worked and cannabis
+          didn't: biotech gaps for company-specific reasons &mdash; a trial readout, a
+          filing &mdash; while a cannabis headline moves every name at once. If that were
+          right, cannabis gap days should cluster on shared calendar dates and biotech's
+          should scatter.</p>
+        <p>The first half held. At heavy volume, 85% of biotech's gaps happen in
+          isolation against 42% of AI's &mdash; catalyst independence is real and
+          measurable.</p>
+        <p><strong>The second half inverted.</strong> Cannabis gap days clustered least
+          of the four sectors, and where clustering did occur it made continuation
+          <em>better</em>, not worse. In AI, gaps landing on shared dates continued 67%
+          of the time against 59% for isolated ones. A sector-wide move is confirmation
+          that something real happened, not contamination.</p>
+        <p class="pull" style="margin-top:2rem">Writing the prediction down before
+          testing it is what made the reversal legible. An untested intuition would
+          have survived as a finding.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ THE BACKTEST ============ -->
+  <section class="reveal">
+    <div class="wrap two-col">
+      <div>
+        <span class="eyebrow">05 / The Backtest</span>
+        <h2>The rule lost. <em>The split is why I believe it.</em></h2>
+      </div>
+      <div>
+        <p>A trend-entry rule on 2-minute bars, two exit variants, costs at 20 basis
+          points a side. The data was cut 60/40 &mdash; the rule was designed on the
+          first half and scored on a second half it had never seen.</p>
+        <table class="data">
+          <thead>
+            <tr><th>Held-out half</th><th>Trades</th><th>Win rate</th><th>Expectancy</th><th>Max DD</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>A &mdash; exit on chop</td><td>92</td><td>11%</td><td>&minus;0.419%</td><td>&minus;33.0%</td></tr>
+            <tr><td>B &mdash; scale and trail</td><td>26</td><td>23%</td><td class="hi">&minus;0.188%</td><td class="hi">&minus;6.4%</td></tr>
+          </tbody>
+        </table>
+        <p class="tbl-note">Both lose. Scaling out and trailing loses far less &mdash;
+          the exit structure matters, but it cannot rescue a bad entry.</p>
+        <p style="margin-top:2rem">An 11% win rate with symmetric win and loss sizes is
+          well below what random entry produces. <strong>The entry isn't uninformative,
+          it's anti-predictive</strong> &mdash; buying after two up bars on 2-minute
+          data is systematically buying local tops.</p>
+        <p>That is a more useful outcome than a flat result, and it only exists because
+          the held-out half was written before the rule was. A rule that only wins on the
+          data it was designed on is a fantasy, and the temptation to tune until the
+          design half looks prettier is the entire reason the split has to be built first.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEXT ============ -->
+  <section class="reveal">
+    <div class="wrap">
+      <span class="eyebrow">06 / Open Threads</span>
+      <h2>What would make this <em>real</em></h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-num">001</span>
+          <h3>Build the right null</h3>
+          <p>Replace the shuffled baseline with volatility-matched surrogate series and
+            a block bootstrap that preserves short-range autocorrelation. Persistence
+            above that null would be a genuine regime finding. The real numbers do run
+            a few points above the random walk &mdash; the current control just can't see it.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">002</span>
+          <h3>Measure the exit</h3>
+          <p>Every result here is a base rate on a single session. There is no exit rule,
+            no position sizing, and no profit and loss. A measured base rate is a filter,
+            and calling it a strategy would be the next mistake in this series.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">003</span>
+          <h3>Invert the entry</h3>
+          <p>If a signal is reliably anti-predictive, its inverse is worth testing &mdash;
+            though 40 basis points of round-trip cost is a high bar for a 2-minute mean
+            reversion, and the honest expectation is that it doesn't clear.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLATES ============ -->
+  <section class="reveal">
+    <div class="wrap">
+      <span class="eyebrow">The Instruments</span>
+      <h2>Four sandboxes, <em>one bench</em></h2>
+      <div class="plates">
+
+        <!-- TO ADD A SCREENSHOT: replace the <span> with
+             <img src="images/markets-01.png" alt="Markov transition matrix dashboard">
+             The image fills the frame automatically. -->
+        <div>
+          <div class="plate"><span>Transition<br>matrix<br>dashboard</span></div>
+          <div class="plate-cap">Plate 01 &mdash; Markov regimes</div>
+        </div>
+        <div>
+          <div class="plate"><span>Held-out<br>equity<br>curves</span></div>
+          <div class="plate-cap">Plate 02 &mdash; Backtest</div>
+        </div>
+        <div>
+          <div class="plate"><span>thinkorswim<br>scanner</span></div>
+          <div class="plate-cap">Plate 03 &mdash; Live scan</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="reveal">
+    <div class="wrap">
+      <span class="eyebrow">See It Run</span>
+      <h2>Every dashboard <em>writes itself</em></h2>
+      <p>Each study renders its own HTML from Python and appends the run to a dated JSON
+        history, so results accumulate instead of overwriting. Code and full output are public.</p>
+      <div class="btn-row">
+        <!-- UPDATE THESE LINKS once the repo is live -->
+        <a class="btn-lime" href="#">Open the regime dashboard</a>
+        <a class="btn-ghost" href="#">Backtest &amp; held-out results &rarr;</a>
+        <a class="btn-ghost" href="#">Code &amp; full write-up &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS IN DETAIL ============ -->
+  <section class="reveal">
+    <div class="wrap">
+      <span class="eyebrow">Skills In Detail</span>
+      <h2>What each of those <em>actually meant</em> here</h2>
+      <div class="tbl-wrap">
+      <table class="take">
+        <thead><tr><th>Skill</th><th>What I did with it</th></tr></thead>
+        <tbody>
+          <tr class="grp"><td colspan="2">Market Structure</td></tr>
+          <tr>
+            <td>Base rates before signals</td>
+            <td>Measured what each basket does on an ordinary day &mdash; 42 to 48% of
+              sessions close above their open &mdash; before asking what it does after a
+              gap. Two sectors that looked different turned out to be one effect sitting
+              on two baselines.</td>
+          </tr>
+          <tr>
+            <td>Regime stability</td>
+            <td>Split every result by year instead of pooling. Biotech held at both ends
+              across three years; AI's quiet-gap signal decayed until it matched its own
+              baseline. A weaker stable result is worth more than a strong unstable one.</td>
+          </tr>
+          <tr>
+            <td>Catalyst independence</td>
+            <td>Measured what share of each sector's high-volume gaps occur in isolation
+              versus alongside their peers, turning an intuition about company-specific
+              news into a number: 85% for biotech, 42% for AI.</td>
+          </tr>
+          <tr class="grp"><td colspan="2">Quantitative Modeling</td></tr>
+          <tr>
+            <td>Markov transition matrices</td>
+            <td>Labeled each session into a market state, counted state-to-state
+              transitions, and derived expected regime duration from the diagonal. Gave
+              catalyst gaps their own states rather than discarding them as outliers, so
+              the memoryless property could be applied to what follows them.</td>
+          </tr>
+          <tr>
+            <td>Null construction</td>
+            <td>Learned the difference between a shuffled null and a surrogate one. A
+              shuffle tests whether a sequence is ordered; a volatility-matched random
+              walk tests whether the structure is real. The second null reproduced my
+              entire regime result.</td>
+          </tr>
+          <tr>
+            <td>Interval discipline</td>
+            <td>Attached Wilson score intervals to every cell. Several results I was ready
+              to publish rested on ten to thirty observations with intervals thirty points
+              wide &mdash; wide enough that the sectors I thought differed were
+              indistinguishable.</td>
+          </tr>
+          <tr>
+            <td>Regime inference</td>
+            <td>Compared hand-labeled states against Markov switching models with
+              switching variance fitted in statsmodels, so calm and stressed states were
+              estimated from returns rather than assigned by rule.</td>
+          </tr>
+          <tr class="grp"><td colspan="2">Research Engineering</td></tr>
+          <tr>
+            <td>Held-out validation</td>
+            <td>Split the backtest 60/40 with transaction costs included and scored only
+              the half the rule never saw, then published the losing result instead of
+              tuning parameters until the design half looked better.</td>
+          </tr>
+          <tr>
+            <td>Parallel sandboxes</td>
+            <td>Ran four sectors as independent, identically configured experiments rather
+              than one combined study. That structure is what made their disagreements
+              interpretable and let a sector artifact be told apart from a real effect.</td>
+          </tr>
+          <tr>
+            <td>Data validation</td>
+            <td>Checked the data before analyzing it. A mean far from its median led to 66
+              corrupted rows, sub-penny rounding artifacts, and the withdrawal of a whole
+              sector &mdash; and to a price-dependent bias in the outcome metric itself.</td>
+          </tr>
+          <tr>
+            <td>Reproducible runs</td>
+            <td>Each study generates its own HTML report from Python and appends results to
+              a dated JSON history, so runs accumulate and stay comparable instead of
+              overwriting each other.</td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p>&copy; 2025 Nexus Lab Space &middot; Santa Fe, NM</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  var root = document.getElementById("nls-markets");
+
+  /* Real numbers from the final run. Continuation = close above open,
+     flat prints excluded. Baselines are each basket's ordinary-day rate. */
+  var BASE = { bio: 47.8, ai: 45.2 };
+  var TIERS = {
+    t1: { cls: "t1", label: "<1.5\u00d7", bio: 31.7, ai: 32.9, nbio: 337, nai: 775,
+          note: "the deepest, best-measured cell in the study" },
+    t2: { cls: "t2", label: "1.5\u20132\u00d7", bio: 41.7, ai: 51.4, nbio: 85, nai: 147,
+          note: "biotech still below its baseline here; AI has crossed" },
+    t3: { cls: "t3", label: "2\u20133\u00d7", bio: 53.6, ai: 56.8, nbio: 56, nai: 133,
+          note: "both sectors above baseline for the first time" },
+    t4: { cls: "t4", label: "3\u20135\u00d7", bio: 68.8, ai: 62.2, nbio: 32, nai: 91,
+          note: "biotech peaks \u2014 on 32 gaps, interval 30 points wide" },
+    t5: { cls: "t5", label: "5\u00d7+", bio: 67.6, ai: 66.2, nbio: 35, nai: 81,
+          note: "both near their ceiling; samples still thin" }
+  };
+  var ORDER = ["t1", "t2", "t3", "t4", "t5"];
+
+  var band = document.getElementById("band");
+  ORDER.forEach(function (key) {
+    var t = TIERS[key];
+    var b = document.createElement("button");
+    b.className = "m-" + t.cls;
+    b.type = "button";
+    b.setAttribute("aria-label", t.label + " relative volume");
+    b.setAttribute("aria-pressed", "false");
+    b.dataset.tier = key;
+    b.addEventListener("mouseenter", function () { show(key); });
+    b.addEventListener("focus", function () { show(key); });
+    b.addEventListener("click", function () { show(key); });
+    band.appendChild(b);
+  });
+
+  var headEl = document.getElementById("ro-tier");
+  var barsEl = document.getElementById("ro-bars");
+  var current = null;
+
+  function bar(name, val, n, base, color) {
+    var pct = Math.round(val);                       /* track is 0-100% */
+    var mark = Math.round(base);
+    return '<div class="bar-row">' +
+             '<div class="bar-top"><span>' + name + ' &middot; n=' + n + '</span>' +
+             '<span>' + val.toFixed(1) + '%</span></div>' +
+             '<div class="bar-track" style="position:relative">' +
+               '<div class="bar-fill" style="width:' + pct + '%;background:' + color + '"></div>' +
+               '<div style="position:absolute;top:-3px;bottom:-3px;left:' + mark +
+                 '%;width:1px;background:var(--cream);opacity:0.75"></div>' +
+             '</div>' +
+           '</div>';
+  }
+
+  function show(key) {
+    if (key === current) return;
+    current = key;
+    var t = TIERS[key];
+    var color = "var(--" + t.cls + ")";
+    headEl.innerHTML = t.label;
+
+    barsEl.innerHTML =
+      bar("Biotech", t.bio, t.nbio, BASE.bio, color) +
+      bar("AI tech", t.ai, t.nai, BASE.ai, color);
+
+    var dBio = (t.bio - BASE.bio).toFixed(1);
+    var dAi = (t.ai - BASE.ai).toFixed(1);
+    document.getElementById("ro-dir").innerHTML =
+      'vs baseline &nbsp;biotech <b>' + (dBio > 0 ? "+" : "") + dBio +
+      '</b> &nbsp;\u00b7&nbsp; AI <b>' + (dAi > 0 ? "+" : "") + dAi +
+      '</b><br><span style="color:var(--faint)">' + t.note + '</span>';
+
+    band.querySelectorAll("button").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.dataset.tier === key ? "true" : "false");
+    });
+  }
+  show("t1");
+
+  /* --- scroll reveal --- */
+  var els = root.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    els.forEach(function (el) { io.observe(el); });
+  } else {
+    els.forEach(function (el) { el.classList.add("visible"); });
+  }
+})();
+</script>
+</body>
+</html>

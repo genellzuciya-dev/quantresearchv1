@@ -1,0 +1,292 @@
+
+========================================================================
+  BIOTECH
+========================================================================
+  24 names · 11544 trading days
+  failed:   DAWN(not enough history)
+
+-- 1. OUTLIER SCAN (reverse-split artifacts) ---------------------------
+   2025-11-19  NUVB   gap    +4.0%  intraday    +43.3%  vol   6.6x
+   2025-10-31  CABA   gap    +5.7%  intraday    +38.3%  vol   6.9x
+   2025-11-24  CGEM   gap    +4.3%  intraday    +30.9%  vol   5.8x
+   2025-05-15  CABA   gap    +7.7%  intraday    +29.3%  vol  21.3x
+   2024-12-23  AVXL   gap    +3.4%  intraday    +25.3%  vol   5.0x
+   2025-08-13  CABA   gap    +3.0%  intraday    +24.8%  vol   5.3x
+   2025-12-30  MREO   gap    +5.6%  intraday    +23.3%  vol   5.4x
+   2025-09-18  NTLA   gap    +5.9%  intraday    +22.6%  vol   3.8x
+   0 day(s) above +100% intraday -- exclude these before publishing if any.
+
+-- 2. UNCONDITIONAL BASELINE (close > open) ----------------------------
+   all days           n= 11544    46.7%   [ 45.7%, 47.6% ]
+   flat open (<1%)    n=  6700    45.9%   [ 44.7%, 47.1% ]
+   small gap 1-3%     n=  2025    44.9%   [ 42.8%, 47.1% ]
+
+-- 3. VOLUME TIERS: buggy vs fixed vol_x -------------------------------
+   tier      n(old)     old    n(fix)   fixed           95% CI     mean   median
+   <1.5x        348  31.3%       338  30.8% [ 26.1%, 35.9% ]    -1.9%    -1.6%
+   1.5-2x        82  41.5%        85  41.2% [ 31.3%, 51.8% ]    -1.4%    -1.2%
+   2-3x          52  53.8%        56  53.6% [ 40.7%, 66.0% ]     1.2%     0.5%
+   3-5x          41  63.4%        32  68.8% [ 51.4%, 82.0% ]     3.4%     4.2%
+   5x+           26  69.2%        38  63.2% [ 47.3%, 76.6% ]     6.0%     5.5%
+   mean vs median gap: a large spread means fat tails, not a typical day.
+
+-- 4. BY YEAR (does the floor track the tape?) -------------------------
+   year     n<1.5x    cont      n>=3x    cont
+     2024       58  27.6%         13  69.2%
+     2025      199  32.2%         40  65.0%
+     2026       81  29.6%         17  64.7%
+
+-- 5. CONCENTRATION of the 3x+ result ----------------------------------
+   70 gaps at 3x+; top 3 names = 27% of them
+   CABA      9 gaps    66.7%
+   PGEN      5 gaps    60.0%
+   FATE      5 gaps    80.0%
+   RLAY      5 gaps    60.0%
+   KYMR      5 gaps    60.0%
+   SANA      4 gaps    50.0%
+
+-- 6. CLUSTERING vs shuffled null --------------------------------------
+   universe breadth on active days: observed 9.7%
+   shuffled null: 6.9% (sd 0.15) -> z = +19.6
+   z above ~2 means gap days genuinely share calendar dates.
+
+-- 7. CLUSTER vs ISOLATED gap days -------------------------------------
+   isolated (<4 names)    all vol  n=  302   44.0%  [ 38.6%, 49.7% ]
+   isolated (<4 names)    3x+ vol  n=   60   68.3%  [ 55.8%, 78.7% ]
+   cluster (>=4 names)    all vol  n=  247   33.2%  [ 27.6%, 39.3% ]
+   cluster (>=4 names)    3x+ vol  n=   10   50.0%  [ 23.7%, 76.3% ]
+   If correlated catalysts break continuation, isolated should beat cluster.
+
+========================================================================
+  AI_TECH
+========================================================================
+  22 names · 10582 trading days
+
+-- 1. OUTLIER SCAN (reverse-split artifacts) ---------------------------
+   2025-01-03  AITX   gap    +4.0%  intraday    +46.2%  vol   7.0x
+   2024-09-16  AITX   gap    +3.8%  intraday    +44.4%  vol   1.9x
+   2024-11-08  INOD   gap   +24.7%  intraday    +41.0%  vol  17.2x
+   2024-12-10  LAES   gap    +3.6%  intraday    +41.0%  vol  12.5x
+   2026-07-22  KSCP   gap    +4.2%  intraday    +39.6%  vol  23.4x
+   2025-02-13  AUR    gap    +5.9%  intraday    +37.9%  vol   3.5x
+   2024-12-23  LAES   gap   +30.5%  intraday    +36.5%  vol   2.7x
+   2025-01-14  RGTI   gap    +8.6%  intraday    +36.2%  vol   1.9x
+   0 day(s) above +100% intraday -- exclude these before publishing if any.
+
+-- 2. UNCONDITIONAL BASELINE (close > open) ----------------------------
+   all days           n= 10582    42.8%   [ 41.9%, 43.8% ]
+   flat open (<1%)    n=  4144    40.6%   [ 39.1%, 42.1% ]
+   small gap 1-3%     n=  2248    43.2%   [ 41.2%, 45.3% ]
+
+-- 3. VOLUME TIERS: buggy vs fixed vol_x -------------------------------
+   tier      n(old)     old    n(fix)   fixed           95% CI     mean   median
+   <1.5x        897  29.7%       881  29.3% [ 26.4%, 32.4% ]    -2.0%    -2.4%
+   1.5-2x       172  50.6%       159  49.1% [ 41.4%, 56.8% ]     1.0%     0.0%
+   2-3x         135  53.3%       137  56.2% [ 47.8%, 64.2% ]     1.6%     1.3%
+   3-5x          86  67.4%        92  60.9% [ 50.7%, 70.2% ]     4.6%     4.3%
+   5x+           65  66.2%        85  67.1% [ 56.5%, 76.1% ]     6.6%     5.9%
+   mean vs median gap: a large spread means fat tails, not a typical day.
+
+-- 4. BY YEAR (does the floor track the tape?) -------------------------
+   year     n<1.5x    cont      n>=3x    cont
+     2024      128  14.8%         55  65.5%
+     2025      527  29.0%         74  66.2%
+     2026      226  38.1%         49  57.1%
+
+-- 5. CONCENTRATION of the 3x+ result ----------------------------------
+   178 gaps at 3x+; top 3 names = 27% of them
+   ARBE     17 gaps    52.9%
+   CXAI     17 gaps    47.1%
+   RGTI     14 gaps    71.4%
+   LAES     14 gaps    50.0%
+   KSCP     13 gaps    53.8%
+   PRSO     12 gaps    66.7%
+
+-- 6. CLUSTERING vs shuffled null --------------------------------------
+   universe breadth on active days: observed 17.0%
+   shuffled null: 13.4% (sd 0.12) -> z = +29.5
+   z above ~2 means gap days genuinely share calendar dates.
+
+-- 7. CLUSTER vs ISOLATED gap days -------------------------------------
+   isolated (<4 names)    all vol  n=  392   31.9%  [ 27.5%, 36.7% ]
+   isolated (<4 names)    3x+ vol  n=   65   55.4%  [ 43.3%, 66.8% ]
+   cluster (>=4 names)    all vol  n=  963   41.6%  [ 38.6%, 44.8% ]
+   cluster (>=4 names)    3x+ vol  n=  113   68.1%  [ 59.1%, 76.0% ]
+   If correlated catalysts break continuation, isolated should beat cluster.
+
+========================================================================
+  BTC_MINERS
+========================================================================
+  12 names · 5769 trading days
+  failed:   BITF(not enough history), SDIG(not enough history), DGHI(not enough history)
+
+-- 1. OUTLIER SCAN (reverse-split artifacts) ---------------------------
+   2025-04-25  GREE   gap    +3.8%  intraday    +50.6%  vol  37.5x
+   2025-08-14  WULF   gap   +31.9%  intraday    +21.0%  vol   7.5x
+   2025-10-20  GREE   gap    +5.8%  intraday    +19.1%  vol   1.5x
+   2026-05-08  CANG   gap    +5.5%  intraday    +19.0%  vol   2.3x
+   2025-10-06  HIVE   gap    +5.6%  intraday    +18.5%  vol   1.6x
+   2024-10-28  BTDR   gap    +5.3%  intraday    +18.2%  vol   2.8x
+   2025-04-22  BTDR   gap    +4.5%  intraday    +18.1%  vol   1.9x
+   2025-05-22  GREE   gap    +8.6%  intraday    +17.9%  vol   2.3x
+   0 day(s) above +100% intraday -- exclude these before publishing if any.
+
+-- 2. UNCONDITIONAL BASELINE (close > open) ----------------------------
+   all days           n=  5769    47.5%   [ 46.2%, 48.8% ]
+   flat open (<1%)    n=  1758    44.5%   [ 42.2%, 46.8% ]
+   small gap 1-3%     n=  1253    49.4%   [ 46.6%, 52.2% ]
+
+-- 3. VOLUME TIERS: buggy vs fixed vol_x -------------------------------
+   tier      n(old)     old    n(fix)   fixed           95% CI     mean   median
+   <1.5x        710  40.8%       692  40.9% [ 37.3%, 44.6% ]    -1.2%    -0.9%
+   1.5-2x       125  58.4%       124  58.1% [ 49.3%, 66.4% ]     0.7%     1.0%
+   2-3x          59  61.0%        68  58.8% [ 47.0%, 69.7% ]     2.7%     4.3%
+   3-5x          22  59.1%        29  51.7% [ 34.4%, 68.6% ]     1.9%     2.1%
+   5x+           10  60.0%        13  61.5% [ 35.5%, 82.3% ]     5.2%     3.3%
+   mean vs median gap: a large spread means fat tails, not a typical day.
+
+-- 4. BY YEAR (does the floor track the tape?) -------------------------
+   year     n<1.5x    cont      n>=3x    cont
+     2024      138  35.5%         13  69.2%
+     2025      342  36.0%         22  54.5%
+     2026      212  52.4%          7  28.6%
+
+-- 5. CONCENTRATION of the 3x+ result ----------------------------------
+   42 gaps at 3x+; top 3 names = 57% of them
+   CANG     11 gaps    45.5%
+   GREE      9 gaps    66.7%
+   BTBT      4 gaps    50.0%
+   RIOT      3 gaps    66.7%
+   WULF      3 gaps    66.7%
+   BTDR      2 gaps   100.0%
+
+-- 6. CLUSTERING vs shuffled null --------------------------------------
+   universe breadth on active days: observed 32.4%
+   shuffled null: 18.3% (sd 0.26) -> z = +54.3
+   z above ~2 means gap days genuinely share calendar dates.
+
+-- 7. CLUSTER vs ISOLATED gap days -------------------------------------
+   isolated (<2 names)    all vol  n=   88   38.6%  [ 29.1%, 49.1% ]
+   isolated (<2 names)    3x+ vol  n=   13   76.9%  [ 49.7%, 91.8% ]
+   cluster (>=2 names)    all vol  n=  838   45.8%  [ 42.5%, 49.2% ]
+   cluster (>=2 names)    3x+ vol  n=   29   44.8%  [ 28.4%, 62.5% ]
+   If correlated catalysts break continuation, isolated should beat cluster.
+
+========================================================================
+  CANNABIS
+========================================================================
+  21 names · 9967 trading days
+  failed:   TCNNF(not enough history)
+
+-- 1. OUTLIER SCAN (reverse-split artifacts) ---------------------------
+   2025-04-14  SHWZ   gap   +10.0%  intraday  +1718.2%  vol   1.2x  <-- IMPOSSIBLE
+   2025-02-11  SHWZ   gap  +104.5%  intraday  +1144.4%  vol   2.9x  <-- IMPOSSIBLE
+   2024-09-06  SHWZ   gap   +20.5%  intraday   +126.4%  vol   0.7x  <-- IMPOSSIBLE
+   2024-12-16  SHWZ   gap  +200.0%  intraday    +66.7%  vol   0.6x
+   2026-04-30  AKAN   gap   +23.5%  intraday    +52.5%  vol   3.3x
+   2025-07-09  SHWZ   gap +6566.7%  intraday    +50.0%  vol   2.6x
+   2025-12-12  TSNDF  gap   +33.2%  intraday    +41.5%  vol   9.7x
+   2025-12-12  CRLBF  gap   +32.2%  intraday    +38.8%  vol   7.5x
+   3 day(s) above +100% intraday -- exclude these before publishing if any.
+
+-- 2. UNCONDITIONAL BASELINE (close > open) ----------------------------
+   all days           n=  9967    41.8%   [ 40.9%, 42.8% ]
+   flat open (<1%)    n=  5336    38.3%   [ 37.0%, 39.6% ]
+   small gap 1-3%     n=  1295    37.1%   [ 34.6%, 39.8% ]
+
+-- 3. VOLUME TIERS: buggy vs fixed vol_x -------------------------------
+   tier      n(old)     old    n(fix)   fixed           95% CI     mean   median
+   <1.5x        523  20.8%       510  20.8% [ 17.5%, 24.5% ]    -0.7%    -3.6%
+   1.5-2x        88  33.0%        90  33.3% [ 24.5%, 43.6% ]    -2.4%    -2.5%
+   2-3x          77  49.4%        76  39.5% [ 29.2%, 50.7% ]    14.5%    -0.5%
+   3-5x          72  45.8%        62  53.2% [ 41.0%, 65.1% ]    -0.7%     1.4%
+   5x+           77  57.1%        98  55.1% [ 45.2%, 64.6% ]     0.6%     1.6%
+   mean vs median gap: a large spread means fat tails, not a typical day.
+
+-- 4. BY YEAR (does the floor track the tape?) -------------------------
+   year     n<1.5x    cont      n>=3x    cont
+     2024       69  18.8%         16  37.5%
+     2025      331  19.0%        119  62.2%
+     2026      110  27.3%         26  26.9%
+
+-- 5. CONCENTRATION of the 3x+ result ----------------------------------
+   161 gaps at 3x+; top 3 names = 24% of them
+   AKAN     15 gaps    20.0%
+   CLVR     13 gaps    23.1%
+   AAWH     11 gaps    63.6%
+   OGI      10 gaps    70.0%
+   CGC       9 gaps    55.6%
+   TSNDF     9 gaps    66.7%
+
+-- 6. CLUSTERING vs shuffled null --------------------------------------
+   universe breadth on active days: observed 11.3%
+   shuffled null: 9.8% (sd 0.16) -> z = +9.2
+   z above ~2 means gap days genuinely share calendar dates.
+
+-- 7. CLUSTER vs ISOLATED gap days -------------------------------------
+   isolated (<4 names)    all vol  n=  488   27.3%  [ 23.5%, 31.4% ]
+   isolated (<4 names)    3x+ vol  n=   49   42.9%  [ 30.0%, 56.7% ]
+   cluster (>=4 names)    all vol  n=  349   34.4%  [ 29.6%, 39.5% ]
+   cluster (>=4 names)    3x+ vol  n=  112   58.9%  [ 49.7%, 67.6% ]
+   If correlated catalysts break continuation, isolated should beat cluster.
+
+========================================================================
+  CANNABIS [LISTED ONLY]
+========================================================================
+  13 names · 6124 trading days
+  excluded: MSOS(ETF), YOLO(ETF), CURLF(OTC), GTBIF(OTC), TCNNF(OTC), CRLBF(OTC), AAWH(OTC), GDNSF(OTC), TSNDF(OTC)
+
+-- 1. OUTLIER SCAN (reverse-split artifacts) ---------------------------
+   2025-04-14  SHWZ   gap   +10.0%  intraday  +1718.2%  vol   1.2x  <-- IMPOSSIBLE
+   2025-02-11  SHWZ   gap  +104.5%  intraday  +1144.4%  vol   2.9x  <-- IMPOSSIBLE
+   2024-09-06  SHWZ   gap   +20.5%  intraday   +126.4%  vol   0.7x  <-- IMPOSSIBLE
+   2024-12-16  SHWZ   gap  +200.0%  intraday    +66.7%  vol   0.6x
+   2026-04-30  AKAN   gap   +23.5%  intraday    +52.5%  vol   3.3x
+   2025-07-09  SHWZ   gap +6566.7%  intraday    +50.0%  vol   2.6x
+   2026-01-20  AKAN   gap    +3.9%  intraday    +36.4%  vol  48.7x
+   2025-09-29  TLRY   gap   +18.3%  intraday    +36.0%  vol   8.4x
+   3 day(s) above +100% intraday -- exclude these before publishing if any.
+
+-- 2. UNCONDITIONAL BASELINE (close > open) ----------------------------
+   all days           n=  6124    38.0%   [ 36.8%, 39.3% ]
+   flat open (<1%)    n=  3811    35.7%   [ 34.2%, 37.2% ]
+   small gap 1-3%     n=   715    37.1%   [ 33.6%, 40.7% ]
+
+-- 3. VOLUME TIERS: buggy vs fixed vol_x -------------------------------
+   tier      n(old)     old    n(fix)   fixed           95% CI     mean   median
+   <1.5x        204  20.6%       198  20.7% [ 15.6%, 26.9% ]     4.3%    -2.6%
+   1.5-2x        42  38.1%        43  37.2% [ 24.4%, 52.1% ]    -1.3%    -0.7%
+   2-3x          41  51.2%        39  41.0% [ 27.1%, 56.6% ]    30.6%     0.0%
+   3-5x          44  40.9%        37  48.6% [ 33.4%, 64.1% ]    -2.2%     0.0%
+   5x+           55  52.7%        68  51.5% [ 39.8%, 62.9% ]    -0.8%     0.7%
+   mean vs median gap: a large spread means fat tails, not a typical day.
+
+-- 4. BY YEAR (does the floor track the tape?) -------------------------
+   year     n<1.5x    cont      n>=3x    cont
+     2024       33  12.1%         12  33.3%
+     2025      123  18.7%         77  61.0%
+     2026       42  33.3%         17  11.8%
+
+-- 5. CONCENTRATION of the 3x+ result ----------------------------------
+   106 gaps at 3x+; top 3 names = 36% of them
+   AKAN     15 gaps    20.0%
+   CLVR     13 gaps    23.1%
+   OGI      10 gaps    70.0%
+   CGC       9 gaps    55.6%
+   TLRY      8 gaps    62.5%
+   VFF       8 gaps    87.5%
+
+-- 6. CLUSTERING vs shuffled null --------------------------------------
+   universe breadth on active days: observed 13.5%
+   shuffled null: 10.8% (sd 0.24) -> z = +11.2
+   z above ~2 means gap days genuinely share calendar dates.
+
+-- 7. CLUSTER vs ISOLATED gap days -------------------------------------
+   isolated (<2 names)    all vol  n=  137   26.3%  [ 19.6%, 34.2% ]
+   isolated (<2 names)    3x+ vol  n=   23   34.8%  [ 18.8%, 55.1% ]
+   cluster (>=2 names)    all vol  n=  249   36.1%  [ 30.4%, 42.3% ]
+   cluster (>=2 names)    3x+ vol  n=   83   54.2%  [ 43.5%, 64.5% ]
+   If correlated catalysts break continuation, isolated should beat cluster.
+
+done. paste this whole output back into the chat.
+

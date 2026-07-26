@@ -1,0 +1,100 @@
+========================================================================
+ SUPERNOVA LIVE SCANNER — thinkorswim setup
+========================================================================
+This is the LIVE companion to your Python supernova_scanner.py.
+
+The Python tool tells you the RULE (over 2 years, gaps continued when
+volume was high). This thinkorswim scan finds STOCKS DOING IT RIGHT NOW.
+
+Set your volume threshold based on what the Python volume-tier study
+shows you — wherever "edge turns on" appears is the number to use.
+The script below uses 2x as a starting default; change RelVolThreshold
+to match your research (e.g. 3.0 if that's where continuation jumped).
+
+------------------------------------------------------------------------
+ HOW TO INSTALL (one time)
+------------------------------------------------------------------------
+1. In thinkorswim, go to the "Scan" tab (top menu).
+2. Click "Study filters" -> the little wrench/gear -> "Add study filter".
+3. Click the pencil/edit icon on the new filter -> "thinkScript Editor".
+4. Delete what's there, paste ONE custom study below, click OK.
+5. Repeat for each custom filter you want (gap + relative volume).
+6. Add the plain filters (price, float) using thinkorswim's built-in
+   dropdowns — those don't need code.
+7. Save the whole thing as a scan: "Save Scan Query" -> name it
+   "Supernova Live".
+
+------------------------------------------------------------------------
+ THE FILTERS
+------------------------------------------------------------------------
+
+--- FILTER 1: Gap up at least 5% (custom thinkScript) ---
+Paste this as a custom study filter, set condition "is true":
+
+def todayOpen = open;
+def priorClose = close[1];
+def gapPct = (todayOpen - priorClose) / priorClose * 100;
+plot scan = gapPct >= 5;
+
+# Change the 5 to your minimum gap %. Your Python study showed the
+# 3-7% bucket already had signal, so 5 is a reasonable live floor.
+
+
+--- FILTER 2: Relative volume >= 2x normal (custom thinkScript) ---
+Paste this as a second custom study filter, condition "is true":
+
+def avgVol = Average(volume, 20)[1];
+def relVol = volume / avgVol;
+plot scan = relVol >= 2;
+
+# THIS IS THE KEY FILTER — it's the volume confirmation your whole
+# thesis rests on. Change the 2 to whatever your Python volume-tier
+# study says the edge turns on at (2, 3, whatever the data shows).
+# Note: intraday, "volume" is cumulative so far today, so this fires
+# more reliably later in the session once volume has built.
+
+
+--- FILTER 3: Price range (built-in, no code) ---
+Use thinkorswim's "Price" dropdown filter:
+   Last  greater than or equal to  1
+   Last  less than or equal to     50
+# Keeps you in the small/mid-cap supernova zone, avoids sub-$1
+# junk and expensive names that don't explode the same way.
+
+
+--- FILTER 4: Float (built-in if available) ---
+Some thinkorswim versions expose "Shares (float)" as a filter:
+   Shares (float)  less than  75,000,000
+# Low float is the fuel. If your version doesn't have this as a
+# scannable field, skip it here and eyeball float on the ones that
+# pass the other filters (your Python tool already shows float).
+
+------------------------------------------------------------------------
+ OPTIONAL: watchlist restriction
+------------------------------------------------------------------------
+On the Scan tab, set "Scan in" to a watchlist of your biotech basket
+(ORIC, VSTM, OLMA, NUVB, KYMR, RXRX, CRBU + any you add). That makes
+the scan hunt only within names you've already researched, instead
+of the whole market. Broaden later once you trust it.
+
+------------------------------------------------------------------------
+ HOW TO USE IT
+------------------------------------------------------------------------
+- Run it as a live scan during market hours. Anything that appears is
+  a stock gapping >=5% on >=2x volume RIGHT NOW.
+- Cross-check against your Python research: is this a name/float profile
+  where gaps historically CONTINUED on high volume? If yes, it's a real
+  candidate. If it's a high-float name your research showed fades, skip.
+- You can right-click the scan -> add it as a column set, or set an
+  ALERT so thinkorswim notifies you when something triggers.
+- IMPORTANT: this finds the IGNITION. It does NOT tell you when to sell.
+  That's the fade study you'd build from your thinkorswim intraday
+  exports. Entry signal only — bring your own exit discipline.
+
+------------------------------------------------------------------------
+ SANITY REMINDER
+------------------------------------------------------------------------
+A scan firing is a HYPOTHESIS, not a buy signal. Your Python research
+found continuation edge on SMALL hi-vol samples (some 1-2 days) — that
+is not yet proven. Paper trade what this surfaces before risking money,
+and keep the 2-share discipline that's kept your losses to pennies.

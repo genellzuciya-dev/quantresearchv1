@@ -1,0 +1,4818 @@
+[
+ {
+  "ticker": "ZW=F",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 483,
+  "gap_days": 0,
+  "freq": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.418,
+   "TREND_DOWN": 0.404,
+   "CHOP": 0.178
+  },
+  "persist": {
+   "GAP_UP": null,
+   "GAP_DOWN": null,
+   "TREND_UP": 0.876,
+   "TREND_DOWN": 0.821,
+   "CHOP": 0.465
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.418,
+   "TREND_DOWN": 0.406,
+   "CHOP": 0.175
+  },
+  "duration": {
+   "GAP_UP": null,
+   "GAP_DOWN": null,
+   "TREND_UP": 8.0,
+   "TREND_DOWN": 5.6,
+   "CHOP": 1.9
+  },
+  "up_to_down": 0.03,
+  "chop_resolves_up": 0.209,
+  "chop_resolves_down": 0.326,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "GAP_DOWN": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.876,
+    "TREND_DOWN": 0.03,
+    "CHOP": 0.095
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.041,
+    "TREND_DOWN": 0.821,
+    "CHOP": 0.138
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.209,
+    "TREND_DOWN": 0.326,
+    "CHOP": 0.465
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 176,
+    "TREND_DOWN": 6,
+    "CHOP": 19
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 8,
+    "TREND_DOWN": 160,
+    "CHOP": 27
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 18,
+    "TREND_DOWN": 28,
+    "CHOP": 40
+   }
+  }
+ },
+ {
+  "ticker": "ZS=F",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 483,
+  "gap_days": 0,
+  "freq": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.464,
+   "TREND_DOWN": 0.356,
+   "CHOP": 0.18
+  },
+  "persist": {
+   "GAP_UP": null,
+   "GAP_DOWN": null,
+   "TREND_UP": 0.874,
+   "TREND_DOWN": 0.843,
+   "CHOP": 0.552
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.462,
+   "TREND_DOWN": 0.353,
+   "CHOP": 0.178
+  },
+  "duration": {
+   "GAP_UP": null,
+   "GAP_DOWN": null,
+   "TREND_UP": 8.0,
+   "TREND_DOWN": 6.4,
+   "CHOP": 2.2
+  },
+  "up_to_down": 0.031,
+  "chop_resolves_up": 0.23,
+  "chop_resolves_down": 0.218,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "GAP_DOWN": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.874,
+    "TREND_DOWN": 0.031,
+    "CHOP": 0.094
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.052,
+    "TREND_DOWN": 0.843,
+    "CHOP": 0.105
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.23,
+    "TREND_DOWN": 0.218,
+    "CHOP": 0.552
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 195,
+    "TREND_DOWN": 7,
+    "CHOP": 21
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 9,
+    "TREND_DOWN": 145,
+    "CHOP": 18
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 20,
+    "TREND_DOWN": 19,
+    "CHOP": 48
+   }
+  }
+ },
+ {
+  "ticker": "ZC=F",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 483,
+  "gap_days": 2,
+  "freq": {
+   "GAP_UP": 0.004,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.495,
+   "TREND_DOWN": 0.329,
+   "CHOP": 0.172
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 0.912,
+   "TREND_DOWN": 0.874,
+   "CHOP": 0.59
+  },
+  "baseline": {
+   "GAP_UP": 0.005,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.492,
+   "TREND_DOWN": 0.327,
+   "CHOP": 0.17
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 11.3,
+   "TREND_DOWN": 8.0,
+   "CHOP": 2.4
+  },
+  "up_to_down": 0.008,
+  "chop_resolves_up": 0.205,
+  "chop_resolves_down": 0.205,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.008,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.912,
+    "TREND_DOWN": 0.008,
+    "CHOP": 0.071
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.019,
+    "TREND_DOWN": 0.874,
+    "CHOP": 0.107
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.205,
+    "TREND_DOWN": 0.205,
+    "CHOP": 0.59
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 2,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 0,
+    "TREND_UP": 217,
+    "TREND_DOWN": 2,
+    "CHOP": 17
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 3,
+    "TREND_DOWN": 139,
+    "CHOP": 17
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 17,
+    "TREND_DOWN": 17,
+    "CHOP": 49
+   }
+  }
+ },
+ {
+  "ticker": "WAB",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 2,
+  "freq": {
+   "GAP_UP": 0.002,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.62,
+   "TREND_DOWN": 0.259,
+   "CHOP": 0.116
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.906,
+   "TREND_DOWN": 0.84,
+   "CHOP": 0.357
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.617,
+   "TREND_DOWN": 0.254,
+   "CHOP": 0.112
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 10.6,
+   "TREND_DOWN": 6.2,
+   "CHOP": 1.6
+  },
+  "up_to_down": 0.017,
+  "chop_resolves_up": 0.393,
+  "chop_resolves_down": 0.25,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 1.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.003,
+    "TREND_UP": 0.906,
+    "TREND_DOWN": 0.017,
+    "CHOP": 0.074
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.008,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.048,
+    "TREND_DOWN": 0.84,
+    "CHOP": 0.104
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.393,
+    "TREND_DOWN": 0.25,
+    "CHOP": 0.357
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 270,
+    "TREND_DOWN": 5,
+    "CHOP": 22
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 6,
+    "TREND_DOWN": 105,
+    "CHOP": 13
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 22,
+    "TREND_DOWN": 14,
+    "CHOP": 20
+   }
+  }
+ },
+ {
+  "ticker": "VSTM",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 6,
+  "freq": {
+   "GAP_UP": 0.004,
+   "GAP_DOWN": 0.008,
+   "TREND_UP": 0.467,
+   "TREND_DOWN": 0.367,
+   "CHOP": 0.154
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.25,
+   "TREND_UP": 0.893,
+   "TREND_DOWN": 0.876,
+   "CHOP": 0.541
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.004,
+   "TREND_UP": 0.465,
+   "TREND_DOWN": 0.369,
+   "CHOP": 0.149
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.3,
+   "TREND_UP": 9.3,
+   "TREND_DOWN": 8.0,
+   "CHOP": 2.2
+  },
+  "up_to_down": 0.018,
+  "chop_resolves_up": 0.243,
+  "chop_resolves_down": 0.216,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.5,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.5
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.25,
+    "TREND_UP": 0.25,
+    "TREND_DOWN": 0.5,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.004,
+    "GAP_DOWN": 0.004,
+    "TREND_UP": 0.893,
+    "TREND_DOWN": 0.018,
+    "CHOP": 0.08
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.006,
+    "GAP_DOWN": 0.011,
+    "TREND_UP": 0.028,
+    "TREND_DOWN": 0.876,
+    "CHOP": 0.079
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.243,
+    "TREND_DOWN": 0.216,
+    "CHOP": 0.541
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 1,
+    "TREND_DOWN": 2,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 200,
+    "TREND_DOWN": 4,
+    "CHOP": 18
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 5,
+    "TREND_DOWN": 155,
+    "CHOP": 14
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 18,
+    "TREND_DOWN": 16,
+    "CHOP": 40
+   }
+  }
+ },
+ {
+  "ticker": "VRT",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 27,
+  "freq": {
+   "GAP_UP": 0.029,
+   "GAP_DOWN": 0.027,
+   "TREND_UP": 0.56,
+   "TREND_DOWN": 0.241,
+   "CHOP": 0.143
+  },
+  "persist": {
+   "GAP_UP": 0.071,
+   "GAP_DOWN": 0.154,
+   "TREND_UP": 0.896,
+   "TREND_DOWN": 0.783,
+   "CHOP": 0.522
+  },
+  "baseline": {
+   "GAP_UP": 0.024,
+   "GAP_DOWN": 0.02,
+   "TREND_UP": 0.556,
+   "TREND_DOWN": 0.236,
+   "CHOP": 0.139
+  },
+  "duration": {
+   "GAP_UP": 1.1,
+   "GAP_DOWN": 1.2,
+   "TREND_UP": 9.6,
+   "TREND_DOWN": 4.6,
+   "CHOP": 2.1
+  },
+  "up_to_down": 0.011,
+  "chop_resolves_up": 0.261,
+  "chop_resolves_down": 0.159,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.071,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.5,
+    "TREND_DOWN": 0.357,
+    "CHOP": 0.071
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.154,
+    "GAP_DOWN": 0.154,
+    "TREND_UP": 0.077,
+    "TREND_DOWN": 0.538,
+    "CHOP": 0.077
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.015,
+    "GAP_DOWN": 0.015,
+    "TREND_UP": 0.896,
+    "TREND_DOWN": 0.011,
+    "CHOP": 0.063
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.043,
+    "GAP_DOWN": 0.043,
+    "TREND_UP": 0.017,
+    "TREND_DOWN": 0.783,
+    "CHOP": 0.113
+   },
+   "CHOP": {
+    "GAP_UP": 0.029,
+    "GAP_DOWN": 0.029,
+    "TREND_UP": 0.261,
+    "TREND_DOWN": 0.159,
+    "CHOP": 0.522
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 7,
+    "TREND_DOWN": 5,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 2,
+    "TREND_UP": 1,
+    "TREND_DOWN": 7,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 4,
+    "GAP_DOWN": 4,
+    "TREND_UP": 242,
+    "TREND_DOWN": 3,
+    "CHOP": 17
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 5,
+    "GAP_DOWN": 5,
+    "TREND_UP": 2,
+    "TREND_DOWN": 90,
+    "CHOP": 13
+   },
+   "CHOP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 2,
+    "TREND_UP": 18,
+    "TREND_DOWN": 11,
+    "CHOP": 36
+   }
+  }
+ },
+ {
+  "ticker": "VMI",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 6,
+  "freq": {
+   "GAP_UP": 0.006,
+   "GAP_DOWN": 0.006,
+   "TREND_UP": 0.6,
+   "TREND_DOWN": 0.234,
+   "CHOP": 0.154
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.896,
+   "TREND_DOWN": 0.83,
+   "CHOP": 0.473
+  },
+  "baseline": {
+   "GAP_UP": 0.003,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.597,
+   "TREND_DOWN": 0.225,
+   "CHOP": 0.154
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 9.6,
+   "TREND_DOWN": 5.9,
+   "CHOP": 1.9
+  },
+  "up_to_down": 0.007,
+  "chop_resolves_up": 0.311,
+  "chop_resolves_down": 0.216,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.667,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.333
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 0.667,
+    "CHOP": 0.333
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.003,
+    "GAP_DOWN": 0.003,
+    "TREND_UP": 0.896,
+    "TREND_DOWN": 0.007,
+    "CHOP": 0.09
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.018,
+    "GAP_DOWN": 0.018,
+    "TREND_UP": 0.045,
+    "TREND_DOWN": 0.83,
+    "CHOP": 0.089
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.311,
+    "TREND_DOWN": 0.216,
+    "CHOP": 0.473
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 2,
+    "TREND_DOWN": 0,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 2,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 259,
+    "TREND_DOWN": 2,
+    "CHOP": 26
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 2,
+    "TREND_UP": 5,
+    "TREND_DOWN": 93,
+    "CHOP": 10
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 23,
+    "TREND_DOWN": 16,
+    "CHOP": 35
+   }
+  }
+ },
+ {
+  "ticker": "VERI",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 33,
+  "freq": {
+   "GAP_UP": 0.037,
+   "GAP_DOWN": 0.031,
+   "TREND_UP": 0.266,
+   "TREND_DOWN": 0.5,
+   "CHOP": 0.166
+  },
+  "persist": {
+   "GAP_UP": 0.167,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.727,
+   "TREND_DOWN": 0.875,
+   "CHOP": 0.55
+  },
+  "baseline": {
+   "GAP_UP": 0.043,
+   "GAP_DOWN": 0.027,
+   "TREND_UP": 0.264,
+   "TREND_DOWN": 0.499,
+   "CHOP": 0.161
+  },
+  "duration": {
+   "GAP_UP": 1.2,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 3.7,
+   "TREND_DOWN": 8.0,
+   "CHOP": 2.2
+  },
+  "up_to_down": 0.016,
+  "chop_resolves_up": 0.225,
+  "chop_resolves_down": 0.2,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.167,
+    "GAP_DOWN": 0.056,
+    "TREND_UP": 0.444,
+    "TREND_DOWN": 0.278,
+    "CHOP": 0.056
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.4,
+    "TREND_DOWN": 0.533,
+    "CHOP": 0.067
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.047,
+    "GAP_DOWN": 0.062,
+    "TREND_UP": 0.727,
+    "TREND_DOWN": 0.016,
+    "CHOP": 0.148
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.029,
+    "GAP_DOWN": 0.025,
+    "TREND_UP": 0.008,
+    "TREND_DOWN": 0.875,
+    "CHOP": 0.062
+   },
+   "CHOP": {
+    "GAP_UP": 0.025,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.225,
+    "TREND_DOWN": 0.2,
+    "CHOP": 0.55
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 3,
+    "GAP_DOWN": 1,
+    "TREND_UP": 8,
+    "TREND_DOWN": 5,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 6,
+    "TREND_DOWN": 8,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 6,
+    "GAP_DOWN": 8,
+    "TREND_UP": 93,
+    "TREND_DOWN": 2,
+    "CHOP": 19
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 7,
+    "GAP_DOWN": 6,
+    "TREND_UP": 2,
+    "TREND_DOWN": 210,
+    "CHOP": 15
+   },
+   "CHOP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 0,
+    "TREND_UP": 18,
+    "TREND_DOWN": 16,
+    "CHOP": 44
+   }
+  }
+ },
+ {
+  "ticker": "UNP",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 4,
+  "freq": {
+   "GAP_UP": 0.006,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.423,
+   "TREND_DOWN": 0.38,
+   "CHOP": 0.189
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.901,
+   "TREND_DOWN": 0.842,
+   "CHOP": 0.604
+  },
+  "baseline": {
+   "GAP_UP": 0.002,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.42,
+   "TREND_DOWN": 0.377,
+   "CHOP": 0.188
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 10.2,
+   "TREND_DOWN": 6.3,
+   "CHOP": 2.5
+  },
+  "up_to_down": 0.015,
+  "chop_resolves_up": 0.121,
+  "chop_resolves_down": 0.275,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.01,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.901,
+    "TREND_DOWN": 0.015,
+    "CHOP": 0.074
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.005,
+    "GAP_DOWN": 0.005,
+    "TREND_UP": 0.033,
+    "TREND_DOWN": 0.842,
+    "CHOP": 0.115
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.121,
+    "TREND_DOWN": 0.275,
+    "CHOP": 0.604
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 3,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 0,
+    "TREND_UP": 183,
+    "TREND_DOWN": 3,
+    "CHOP": 15
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 6,
+    "TREND_DOWN": 154,
+    "CHOP": 21
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 11,
+    "TREND_DOWN": 25,
+    "CHOP": 55
+   }
+  }
+ },
+ {
+  "ticker": "TSM",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 12,
+  "freq": {
+   "GAP_UP": 0.015,
+   "GAP_DOWN": 0.01,
+   "TREND_UP": 0.589,
+   "TREND_DOWN": 0.243,
+   "CHOP": 0.143
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.894,
+   "TREND_DOWN": 0.836,
+   "CHOP": 0.493
+  },
+  "baseline": {
+   "GAP_UP": 0.007,
+   "GAP_DOWN": 0.008,
+   "TREND_UP": 0.585,
+   "TREND_DOWN": 0.238,
+   "CHOP": 0.139
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 9.5,
+   "TREND_DOWN": 6.1,
+   "CHOP": 2.0
+  },
+  "up_to_down": 0.007,
+  "chop_resolves_up": 0.275,
+  "chop_resolves_down": 0.217,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.857,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.143
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.2,
+    "TREND_DOWN": 0.6,
+    "CHOP": 0.2
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.014,
+    "GAP_DOWN": 0.011,
+    "TREND_UP": 0.894,
+    "TREND_DOWN": 0.007,
+    "CHOP": 0.074
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.017,
+    "GAP_DOWN": 0.017,
+    "TREND_UP": 0.026,
+    "TREND_DOWN": 0.836,
+    "CHOP": 0.103
+   },
+   "CHOP": {
+    "GAP_UP": 0.014,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.275,
+    "TREND_DOWN": 0.217,
+    "CHOP": 0.493
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 6,
+    "TREND_DOWN": 0,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 3,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 4,
+    "GAP_DOWN": 3,
+    "TREND_UP": 254,
+    "TREND_DOWN": 2,
+    "CHOP": 21
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 2,
+    "TREND_UP": 3,
+    "TREND_DOWN": 97,
+    "CHOP": 12
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 19,
+    "TREND_DOWN": 15,
+    "CHOP": 34
+   }
+  }
+ },
+ {
+  "ticker": "TRN",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 4,
+  "freq": {
+   "GAP_UP": 0.008,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.459,
+   "TREND_DOWN": 0.34,
+   "CHOP": 0.193
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 0.873,
+   "TREND_DOWN": 0.866,
+   "CHOP": 0.57
+  },
+  "baseline": {
+   "GAP_UP": 0.009,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.459,
+   "TREND_DOWN": 0.339,
+   "CHOP": 0.19
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 7.9,
+   "TREND_DOWN": 7.5,
+   "CHOP": 2.3
+  },
+  "up_to_down": 0.009,
+  "chop_resolves_up": 0.215,
+  "chop_resolves_down": 0.204,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.005,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.873,
+    "TREND_DOWN": 0.009,
+    "CHOP": 0.114
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.012,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.03,
+    "TREND_DOWN": 0.866,
+    "CHOP": 0.091
+   },
+   "CHOP": {
+    "GAP_UP": 0.011,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.215,
+    "TREND_DOWN": 0.204,
+    "CHOP": 0.57
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 4,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 192,
+    "TREND_DOWN": 2,
+    "CHOP": 25
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 0,
+    "TREND_UP": 5,
+    "TREND_DOWN": 142,
+    "CHOP": 15
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 20,
+    "TREND_DOWN": 19,
+    "CHOP": 53
+   }
+  }
+ },
+ {
+  "ticker": "SPY",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 0,
+  "freq": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.651,
+   "TREND_DOWN": 0.222,
+   "CHOP": 0.127
+  },
+  "persist": {
+   "GAP_UP": null,
+   "GAP_DOWN": null,
+   "TREND_UP": 0.917,
+   "TREND_DOWN": 0.832,
+   "CHOP": 0.483
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.649,
+   "TREND_DOWN": 0.215,
+   "CHOP": 0.121
+  },
+  "duration": {
+   "GAP_UP": null,
+   "GAP_DOWN": null,
+   "TREND_UP": 12.1,
+   "TREND_DOWN": 5.9,
+   "CHOP": 1.9
+  },
+  "up_to_down": 0.022,
+  "chop_resolves_up": 0.333,
+  "chop_resolves_down": 0.183,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "GAP_DOWN": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.917,
+    "TREND_DOWN": 0.022,
+    "CHOP": 0.061
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.047,
+    "TREND_DOWN": 0.832,
+    "CHOP": 0.121
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.333,
+    "TREND_DOWN": 0.183,
+    "CHOP": 0.483
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 288,
+    "TREND_DOWN": 7,
+    "CHOP": 19
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 5,
+    "TREND_DOWN": 89,
+    "CHOP": 13
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 20,
+    "TREND_DOWN": 11,
+    "CHOP": 29
+   }
+  }
+ },
+ {
+  "ticker": "SOUN",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 36,
+  "freq": {
+   "GAP_UP": 0.041,
+   "GAP_DOWN": 0.033,
+   "TREND_UP": 0.317,
+   "TREND_DOWN": 0.371,
+   "CHOP": 0.237
+  },
+  "persist": {
+   "GAP_UP": 0.05,
+   "GAP_DOWN": 0.125,
+   "TREND_UP": 0.778,
+   "TREND_DOWN": 0.764,
+   "CHOP": 0.614
+  },
+  "baseline": {
+   "GAP_UP": 0.044,
+   "GAP_DOWN": 0.034,
+   "TREND_UP": 0.314,
+   "TREND_DOWN": 0.372,
+   "CHOP": 0.231
+  },
+  "duration": {
+   "GAP_UP": 1.1,
+   "GAP_DOWN": 1.1,
+   "TREND_UP": 4.5,
+   "TREND_DOWN": 4.2,
+   "CHOP": 2.6
+  },
+  "up_to_down": 0.026,
+  "chop_resolves_up": 0.158,
+  "chop_resolves_down": 0.202,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.05,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.45,
+    "TREND_DOWN": 0.45,
+    "CHOP": 0.05
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.062,
+    "GAP_DOWN": 0.125,
+    "TREND_UP": 0.312,
+    "TREND_DOWN": 0.438,
+    "CHOP": 0.062
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.046,
+    "GAP_DOWN": 0.033,
+    "TREND_UP": 0.778,
+    "TREND_DOWN": 0.026,
+    "CHOP": 0.118
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.056,
+    "GAP_DOWN": 0.039,
+    "TREND_UP": 0.006,
+    "TREND_DOWN": 0.764,
+    "CHOP": 0.135
+   },
+   "CHOP": {
+    "GAP_UP": 0.009,
+    "GAP_DOWN": 0.018,
+    "TREND_UP": 0.158,
+    "TREND_DOWN": 0.202,
+    "CHOP": 0.614
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 9,
+    "TREND_DOWN": 9,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 5,
+    "TREND_DOWN": 7,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 7,
+    "GAP_DOWN": 5,
+    "TREND_UP": 119,
+    "TREND_DOWN": 4,
+    "CHOP": 18
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 10,
+    "GAP_DOWN": 7,
+    "TREND_UP": 1,
+    "TREND_DOWN": 136,
+    "CHOP": 24
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 18,
+    "TREND_DOWN": 23,
+    "CHOP": 70
+   }
+  }
+ },
+ {
+  "ticker": "SBUX",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 4,
+  "freq": {
+   "GAP_UP": 0.004,
+   "GAP_DOWN": 0.004,
+   "TREND_UP": 0.519,
+   "TREND_DOWN": 0.309,
+   "CHOP": 0.164
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.872,
+   "TREND_DOWN": 0.812,
+   "CHOP": 0.474
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.519,
+   "TREND_DOWN": 0.307,
+   "CHOP": 0.169
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 7.8,
+   "TREND_DOWN": 5.3,
+   "CHOP": 1.9
+  },
+  "up_to_down": 0.028,
+  "chop_resolves_up": 0.269,
+  "chop_resolves_down": 0.231,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.5,
+    "TREND_DOWN": 0.5,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.004,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.872,
+    "TREND_DOWN": 0.028,
+    "CHOP": 0.096
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.007,
+    "TREND_UP": 0.06,
+    "TREND_DOWN": 0.812,
+    "CHOP": 0.121
+   },
+   "CHOP": {
+    "GAP_UP": 0.013,
+    "GAP_DOWN": 0.013,
+    "TREND_UP": 0.269,
+    "TREND_DOWN": 0.231,
+    "CHOP": 0.474
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 2,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 218,
+    "TREND_DOWN": 7,
+    "CHOP": 24
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 9,
+    "TREND_DOWN": 121,
+    "CHOP": 18
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 21,
+    "TREND_DOWN": 18,
+    "CHOP": 37
+   }
+  }
+ },
+ {
+  "ticker": "PLTR",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 20,
+  "freq": {
+   "GAP_UP": 0.023,
+   "GAP_DOWN": 0.019,
+   "TREND_UP": 0.519,
+   "TREND_DOWN": 0.263,
+   "CHOP": 0.176
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.88,
+   "TREND_DOWN": 0.819,
+   "CHOP": 0.524
+  },
+  "baseline": {
+   "GAP_UP": 0.019,
+   "GAP_DOWN": 0.018,
+   "TREND_UP": 0.518,
+   "TREND_DOWN": 0.262,
+   "CHOP": 0.174
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 8.3,
+   "TREND_DOWN": 5.5,
+   "CHOP": 2.1
+  },
+  "up_to_down": 0.008,
+  "chop_resolves_up": 0.179,
+  "chop_resolves_down": 0.202,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.727,
+    "TREND_DOWN": 0.273,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.111,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.333,
+    "TREND_DOWN": 0.111,
+    "CHOP": 0.444
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.016,
+    "GAP_DOWN": 0.016,
+    "TREND_UP": 0.88,
+    "TREND_DOWN": 0.008,
+    "CHOP": 0.08
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.016,
+    "GAP_DOWN": 0.008,
+    "TREND_UP": 0.024,
+    "TREND_DOWN": 0.819,
+    "CHOP": 0.134
+   },
+   "CHOP": {
+    "GAP_UP": 0.048,
+    "GAP_DOWN": 0.048,
+    "TREND_UP": 0.179,
+    "TREND_DOWN": 0.202,
+    "CHOP": 0.524
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 8,
+    "TREND_DOWN": 3,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 3,
+    "TREND_DOWN": 1,
+    "CHOP": 4
+   },
+   "TREND_UP": {
+    "GAP_UP": 4,
+    "GAP_DOWN": 4,
+    "TREND_UP": 220,
+    "TREND_DOWN": 2,
+    "CHOP": 20
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 1,
+    "TREND_UP": 3,
+    "TREND_DOWN": 104,
+    "CHOP": 17
+   },
+   "CHOP": {
+    "GAP_UP": 4,
+    "GAP_DOWN": 4,
+    "TREND_UP": 15,
+    "TREND_DOWN": 17,
+    "CHOP": 44
+   }
+  }
+ },
+ {
+  "ticker": "ORIC",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 17,
+  "freq": {
+   "GAP_UP": 0.023,
+   "GAP_DOWN": 0.012,
+   "TREND_UP": 0.39,
+   "TREND_DOWN": 0.398,
+   "CHOP": 0.176
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.866,
+   "TREND_DOWN": 0.807,
+   "CHOP": 0.459
+  },
+  "baseline": {
+   "GAP_UP": 0.021,
+   "GAP_DOWN": 0.009,
+   "TREND_UP": 0.386,
+   "TREND_DOWN": 0.396,
+   "CHOP": 0.175
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 7.5,
+   "TREND_DOWN": 5.2,
+   "CHOP": 1.8
+  },
+  "up_to_down": 0.021,
+  "chop_resolves_up": 0.247,
+  "chop_resolves_down": 0.259,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.364,
+    "TREND_DOWN": 0.545,
+    "CHOP": 0.091
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.167,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.167,
+    "TREND_DOWN": 0.667,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.016,
+    "GAP_DOWN": 0.005,
+    "TREND_UP": 0.866,
+    "TREND_DOWN": 0.021,
+    "CHOP": 0.091
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.031,
+    "GAP_DOWN": 0.016,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 0.807,
+    "CHOP": 0.146
+   },
+   "CHOP": {
+    "GAP_UP": 0.012,
+    "GAP_DOWN": 0.024,
+    "TREND_UP": 0.247,
+    "TREND_DOWN": 0.259,
+    "CHOP": 0.459
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 4,
+    "TREND_DOWN": 6,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 4,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 3,
+    "GAP_DOWN": 1,
+    "TREND_UP": 162,
+    "TREND_DOWN": 4,
+    "CHOP": 17
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 6,
+    "GAP_DOWN": 3,
+    "TREND_UP": 0,
+    "TREND_DOWN": 155,
+    "CHOP": 28
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 21,
+    "TREND_DOWN": 22,
+    "CHOP": 39
+   }
+  }
+ },
+ {
+  "ticker": "NVDA",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 8,
+  "freq": {
+   "GAP_UP": 0.008,
+   "GAP_DOWN": 0.008,
+   "TREND_UP": 0.481,
+   "TREND_DOWN": 0.28,
+   "CHOP": 0.222
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.87,
+   "TREND_DOWN": 0.778,
+   "CHOP": 0.561
+  },
+  "baseline": {
+   "GAP_UP": 0.005,
+   "GAP_DOWN": 0.005,
+   "TREND_UP": 0.477,
+   "TREND_DOWN": 0.276,
+   "CHOP": 0.221
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 7.7,
+   "TREND_DOWN": 4.5,
+   "CHOP": 2.3
+  },
+  "up_to_down": 0.022,
+  "chop_resolves_up": 0.224,
+  "chop_resolves_down": 0.196,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.25,
+    "TREND_DOWN": 0.25,
+    "CHOP": 0.5
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.25,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 0.75,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.004,
+    "GAP_DOWN": 0.004,
+    "TREND_UP": 0.87,
+    "TREND_DOWN": 0.022,
+    "CHOP": 0.1
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.007,
+    "GAP_DOWN": 0.015,
+    "TREND_UP": 0.037,
+    "TREND_DOWN": 0.778,
+    "CHOP": 0.163
+   },
+   "CHOP": {
+    "GAP_UP": 0.009,
+    "GAP_DOWN": 0.009,
+    "TREND_UP": 0.224,
+    "TREND_DOWN": 0.196,
+    "CHOP": 0.561
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 1,
+    "CHOP": 2
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 3,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 201,
+    "TREND_DOWN": 5,
+    "CHOP": 23
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 5,
+    "TREND_DOWN": 105,
+    "CHOP": 22
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 24,
+    "TREND_DOWN": 21,
+    "CHOP": 60
+   }
+  }
+ },
+ {
+  "ticker": "NTR",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 1,
+  "freq": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.448,
+   "TREND_DOWN": 0.332,
+   "CHOP": 0.218
+  },
+  "persist": {
+   "GAP_UP": null,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.828,
+   "TREND_DOWN": 0.812,
+   "CHOP": 0.514
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.447,
+   "TREND_DOWN": 0.33,
+   "CHOP": 0.214
+  },
+  "duration": {
+   "GAP_UP": null,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 5.8,
+   "TREND_DOWN": 5.3,
+   "CHOP": 2.1
+  },
+  "up_to_down": 0.037,
+  "chop_resolves_up": 0.295,
+  "chop_resolves_down": 0.19,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.005,
+    "TREND_UP": 0.828,
+    "TREND_DOWN": 0.037,
+    "CHOP": 0.13
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.044,
+    "TREND_DOWN": 0.812,
+    "CHOP": 0.144
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.295,
+    "TREND_DOWN": 0.19,
+    "CHOP": 0.514
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 178,
+    "TREND_DOWN": 8,
+    "CHOP": 28
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 7,
+    "TREND_DOWN": 130,
+    "CHOP": 23
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 31,
+    "TREND_DOWN": 20,
+    "CHOP": 54
+   }
+  }
+ },
+ {
+  "ticker": "NSRGY",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 5,
+  "freq": {
+   "GAP_UP": 0.006,
+   "GAP_DOWN": 0.004,
+   "TREND_UP": 0.396,
+   "TREND_DOWN": 0.413,
+   "CHOP": 0.18
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.853,
+   "TREND_DOWN": 0.894,
+   "CHOP": 0.632
+  },
+  "baseline": {
+   "GAP_UP": 0.003,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.396,
+   "TREND_DOWN": 0.414,
+   "CHOP": 0.182
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 6.8,
+   "TREND_DOWN": 9.4,
+   "CHOP": 2.7
+  },
+  "up_to_down": 0.031,
+  "chop_resolves_up": 0.195,
+  "chop_resolves_down": 0.161,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.016,
+    "GAP_DOWN": 0.005,
+    "TREND_UP": 0.853,
+    "TREND_DOWN": 0.031,
+    "CHOP": 0.094
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.035,
+    "TREND_DOWN": 0.894,
+    "CHOP": 0.071
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.011,
+    "TREND_UP": 0.195,
+    "TREND_DOWN": 0.161,
+    "CHOP": 0.632
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 3,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 2,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 3,
+    "GAP_DOWN": 1,
+    "TREND_UP": 163,
+    "TREND_DOWN": 6,
+    "CHOP": 18
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 7,
+    "TREND_DOWN": 177,
+    "CHOP": 14
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 17,
+    "TREND_DOWN": 14,
+    "CHOP": 55
+   }
+  }
+ },
+ {
+  "ticker": "NSC",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 1,
+  "freq": {
+   "GAP_UP": 0.002,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.525,
+   "TREND_DOWN": 0.332,
+   "CHOP": 0.141
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 0.929,
+   "TREND_DOWN": 0.863,
+   "CHOP": 0.544
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.521,
+   "TREND_DOWN": 0.328,
+   "CHOP": 0.141
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 14.0,
+   "TREND_DOWN": 7.3,
+   "CHOP": 2.2
+  },
+  "up_to_down": 0.016,
+  "chop_resolves_up": 0.191,
+  "chop_resolves_down": 0.265,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.004,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.929,
+    "TREND_DOWN": 0.016,
+    "CHOP": 0.052
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.025,
+    "TREND_DOWN": 0.863,
+    "CHOP": 0.113
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.191,
+    "TREND_DOWN": 0.265,
+    "CHOP": 0.544
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 234,
+    "TREND_DOWN": 4,
+    "CHOP": 13
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 4,
+    "TREND_DOWN": 138,
+    "CHOP": 18
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 13,
+    "TREND_DOWN": 18,
+    "CHOP": 37
+   }
+  }
+ },
+ {
+  "ticker": "MRVL",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 41,
+  "freq": {
+   "GAP_UP": 0.054,
+   "GAP_DOWN": 0.031,
+   "TREND_UP": 0.5,
+   "TREND_DOWN": 0.266,
+   "CHOP": 0.149
+  },
+  "persist": {
+   "GAP_UP": 0.077,
+   "GAP_DOWN": 0.133,
+   "TREND_UP": 0.822,
+   "TREND_DOWN": 0.811,
+   "CHOP": 0.5
+  },
+  "baseline": {
+   "GAP_UP": 0.057,
+   "GAP_DOWN": 0.026,
+   "TREND_UP": 0.499,
+   "TREND_DOWN": 0.267,
+   "CHOP": 0.15
+  },
+  "duration": {
+   "GAP_UP": 1.1,
+   "GAP_DOWN": 1.2,
+   "TREND_UP": 5.6,
+   "TREND_DOWN": 5.3,
+   "CHOP": 2.0
+  },
+  "up_to_down": 0.021,
+  "chop_resolves_up": 0.306,
+  "chop_resolves_down": 0.125,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.077,
+    "GAP_DOWN": 0.038,
+    "TREND_UP": 0.654,
+    "TREND_DOWN": 0.154,
+    "CHOP": 0.077
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.067,
+    "GAP_DOWN": 0.133,
+    "TREND_UP": 0.133,
+    "TREND_DOWN": 0.467,
+    "CHOP": 0.2
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.062,
+    "GAP_DOWN": 0.025,
+    "TREND_UP": 0.822,
+    "TREND_DOWN": 0.021,
+    "CHOP": 0.071
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.039,
+    "GAP_DOWN": 0.031,
+    "TREND_UP": 0.008,
+    "TREND_DOWN": 0.811,
+    "CHOP": 0.11
+   },
+   "CHOP": {
+    "GAP_UP": 0.042,
+    "GAP_DOWN": 0.028,
+    "TREND_UP": 0.306,
+    "TREND_DOWN": 0.125,
+    "CHOP": 0.5
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 1,
+    "TREND_UP": 17,
+    "TREND_DOWN": 4,
+    "CHOP": 2
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 2,
+    "TREND_DOWN": 7,
+    "CHOP": 3
+   },
+   "TREND_UP": {
+    "GAP_UP": 15,
+    "GAP_DOWN": 6,
+    "TREND_UP": 198,
+    "TREND_DOWN": 5,
+    "CHOP": 17
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 5,
+    "GAP_DOWN": 4,
+    "TREND_UP": 1,
+    "TREND_DOWN": 103,
+    "CHOP": 14
+   },
+   "CHOP": {
+    "GAP_UP": 3,
+    "GAP_DOWN": 2,
+    "TREND_UP": 22,
+    "TREND_DOWN": 9,
+    "CHOP": 36
+   }
+  }
+ },
+ {
+  "ticker": "MOS",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 5,
+  "freq": {
+   "GAP_UP": 0.004,
+   "GAP_DOWN": 0.006,
+   "TREND_UP": 0.367,
+   "TREND_DOWN": 0.44,
+   "CHOP": 0.183
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.818,
+   "TREND_DOWN": 0.849,
+   "CHOP": 0.489
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.003,
+   "TREND_UP": 0.367,
+   "TREND_DOWN": 0.438,
+   "CHOP": 0.182
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 5.5,
+   "TREND_DOWN": 6.6,
+   "CHOP": 2.0
+  },
+  "up_to_down": 0.04,
+  "chop_resolves_up": 0.239,
+  "chop_resolves_down": 0.25,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.5,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.5
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 0.667,
+    "CHOP": 0.333
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.006,
+    "TREND_UP": 0.818,
+    "TREND_DOWN": 0.04,
+    "CHOP": 0.136
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.009,
+    "TREND_UP": 0.052,
+    "TREND_DOWN": 0.849,
+    "CHOP": 0.09
+   },
+   "CHOP": {
+    "GAP_UP": 0.023,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.239,
+    "TREND_DOWN": 0.25,
+    "CHOP": 0.489
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 2,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 144,
+    "TREND_DOWN": 7,
+    "CHOP": 24
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 2,
+    "TREND_UP": 11,
+    "TREND_DOWN": 180,
+    "CHOP": 19
+   },
+   "CHOP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 0,
+    "TREND_UP": 21,
+    "TREND_DOWN": 22,
+    "CHOP": 43
+   }
+  }
+ },
+ {
+  "ticker": "MDLZ",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 0,
+  "freq": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.398,
+   "TREND_DOWN": 0.467,
+   "CHOP": 0.135
+  },
+  "persist": {
+   "GAP_UP": null,
+   "GAP_DOWN": null,
+   "TREND_UP": 0.854,
+   "TREND_DOWN": 0.898,
+   "CHOP": 0.516
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.4,
+   "TREND_DOWN": 0.467,
+   "CHOP": 0.133
+  },
+  "duration": {
+   "GAP_UP": null,
+   "GAP_DOWN": null,
+   "TREND_UP": 6.9,
+   "TREND_DOWN": 9.8,
+   "CHOP": 2.1
+  },
+  "up_to_down": 0.047,
+  "chop_resolves_up": 0.266,
+  "chop_resolves_down": 0.219,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "GAP_DOWN": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.854,
+    "TREND_DOWN": 0.047,
+    "CHOP": 0.099
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.044,
+    "TREND_DOWN": 0.898,
+    "CHOP": 0.058
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.266,
+    "TREND_DOWN": 0.219,
+    "CHOP": 0.516
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 164,
+    "TREND_DOWN": 9,
+    "CHOP": 19
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 10,
+    "TREND_DOWN": 202,
+    "CHOP": 13
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 17,
+    "TREND_DOWN": 14,
+    "CHOP": 33
+   }
+  }
+ },
+ {
+  "ticker": "MANH",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 7,
+  "freq": {
+   "GAP_UP": 0.01,
+   "GAP_DOWN": 0.004,
+   "TREND_UP": 0.388,
+   "TREND_DOWN": 0.434,
+   "CHOP": 0.164
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.833,
+   "TREND_DOWN": 0.837,
+   "CHOP": 0.43
+  },
+  "baseline": {
+   "GAP_UP": 0.008,
+   "GAP_DOWN": 0.003,
+   "TREND_UP": 0.388,
+   "TREND_DOWN": 0.434,
+   "CHOP": 0.163
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 6.0,
+   "TREND_DOWN": 6.1,
+   "CHOP": 1.8
+  },
+  "up_to_down": 0.043,
+  "chop_resolves_up": 0.266,
+  "chop_resolves_down": 0.291,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.4,
+    "TREND_DOWN": 0.2,
+    "CHOP": 0.4
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.005,
+    "GAP_DOWN": 0.005,
+    "TREND_UP": 0.833,
+    "TREND_DOWN": 0.043,
+    "CHOP": 0.113
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.014,
+    "GAP_DOWN": 0.005,
+    "TREND_UP": 0.038,
+    "TREND_DOWN": 0.837,
+    "CHOP": 0.105
+   },
+   "CHOP": {
+    "GAP_UP": 0.013,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.266,
+    "TREND_DOWN": 0.291,
+    "CHOP": 0.43
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 2,
+    "TREND_DOWN": 1,
+    "CHOP": 2
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 2,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 155,
+    "TREND_DOWN": 8,
+    "CHOP": 21
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 3,
+    "GAP_DOWN": 1,
+    "TREND_UP": 8,
+    "TREND_DOWN": 175,
+    "CHOP": 22
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 21,
+    "TREND_DOWN": 23,
+    "CHOP": 34
+   }
+  }
+ },
+ {
+  "ticker": "LNN",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 5,
+  "freq": {
+   "GAP_UP": 0.006,
+   "GAP_DOWN": 0.004,
+   "TREND_UP": 0.438,
+   "TREND_DOWN": 0.332,
+   "CHOP": 0.22
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.867,
+   "TREND_DOWN": 0.818,
+   "CHOP": 0.547
+  },
+  "baseline": {
+   "GAP_UP": 0.005,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.436,
+   "TREND_DOWN": 0.327,
+   "CHOP": 0.215
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 7.5,
+   "TREND_DOWN": 5.5,
+   "CHOP": 2.2
+  },
+  "up_to_down": 0.014,
+  "chop_resolves_up": 0.208,
+  "chop_resolves_down": 0.236,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.333,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.667
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.005,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.867,
+    "TREND_DOWN": 0.014,
+    "CHOP": 0.114
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.006,
+    "GAP_DOWN": 0.013,
+    "TREND_UP": 0.025,
+    "TREND_DOWN": 0.818,
+    "CHOP": 0.138
+   },
+   "CHOP": {
+    "GAP_UP": 0.009,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.208,
+    "TREND_DOWN": 0.236,
+    "CHOP": 0.547
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 2
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 2,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 183,
+    "TREND_DOWN": 3,
+    "CHOP": 24
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 4,
+    "TREND_DOWN": 130,
+    "CHOP": 22
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 22,
+    "TREND_DOWN": 25,
+    "CHOP": 58
+   }
+  }
+ },
+ {
+  "ticker": "KO",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 2,
+  "freq": {
+   "GAP_UP": 0.002,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.454,
+   "TREND_DOWN": 0.371,
+   "CHOP": 0.17
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.836,
+   "TREND_DOWN": 0.81,
+   "CHOP": 0.42
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.455,
+   "TREND_DOWN": 0.372,
+   "CHOP": 0.168
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 6.1,
+   "TREND_DOWN": 5.3,
+   "CHOP": 1.7
+  },
+  "up_to_down": 0.041,
+  "chop_resolves_up": 0.284,
+  "chop_resolves_down": 0.296,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.836,
+    "TREND_DOWN": 0.041,
+    "CHOP": 0.123
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.006,
+    "GAP_DOWN": 0.006,
+    "TREND_UP": 0.061,
+    "TREND_DOWN": 0.81,
+    "CHOP": 0.117
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.284,
+    "TREND_DOWN": 0.296,
+    "CHOP": 0.42
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 183,
+    "TREND_DOWN": 9,
+    "CHOP": 27
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 11,
+    "TREND_DOWN": 145,
+    "CHOP": 21
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 23,
+    "TREND_DOWN": 24,
+    "CHOP": 34
+   }
+  }
+ },
+ {
+  "ticker": "KDP",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 2,
+  "freq": {
+   "GAP_UP": 0.002,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.427,
+   "TREND_DOWN": 0.386,
+   "CHOP": 0.183
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.879,
+   "TREND_DOWN": 0.849,
+   "CHOP": 0.523
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.426,
+   "TREND_DOWN": 0.384,
+   "CHOP": 0.179
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 8.2,
+   "TREND_DOWN": 6.6,
+   "CHOP": 2.1
+  },
+  "up_to_down": 0.019,
+  "chop_resolves_up": 0.205,
+  "chop_resolves_down": 0.273,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.005,
+    "GAP_DOWN": 0.005,
+    "TREND_UP": 0.879,
+    "TREND_DOWN": 0.019,
+    "CHOP": 0.092
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.027,
+    "TREND_DOWN": 0.849,
+    "CHOP": 0.124
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.205,
+    "TREND_DOWN": 0.273,
+    "CHOP": 0.523
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 181,
+    "TREND_DOWN": 4,
+    "CHOP": 19
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 5,
+    "TREND_DOWN": 157,
+    "CHOP": 23
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 18,
+    "TREND_DOWN": 24,
+    "CHOP": 46
+   }
+  }
+ },
+ {
+  "ticker": "KC=F",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 484,
+  "gap_days": 8,
+  "freq": {
+   "GAP_UP": 0.012,
+   "GAP_DOWN": 0.004,
+   "TREND_UP": 0.405,
+   "TREND_DOWN": 0.378,
+   "CHOP": 0.2
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.832,
+   "TREND_DOWN": 0.82,
+   "CHOP": 0.542
+  },
+  "baseline": {
+   "GAP_UP": 0.012,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.404,
+   "TREND_DOWN": 0.373,
+   "CHOP": 0.198
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 5.9,
+   "TREND_DOWN": 5.5,
+   "CHOP": 2.2
+  },
+  "up_to_down": 0.041,
+  "chop_resolves_up": 0.219,
+  "chop_resolves_down": 0.24,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.167,
+    "TREND_UP": 0.5,
+    "TREND_DOWN": 0.333,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.5,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.5
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.02,
+    "GAP_DOWN": 0.005,
+    "TREND_UP": 0.832,
+    "TREND_DOWN": 0.041,
+    "CHOP": 0.102
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.011,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.038,
+    "TREND_DOWN": 0.82,
+    "CHOP": 0.131
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.219,
+    "TREND_DOWN": 0.24,
+    "CHOP": 0.542
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 3,
+    "TREND_DOWN": 2,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 4,
+    "GAP_DOWN": 1,
+    "TREND_UP": 163,
+    "TREND_DOWN": 8,
+    "CHOP": 20
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 0,
+    "TREND_UP": 7,
+    "TREND_DOWN": 150,
+    "CHOP": 24
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 21,
+    "TREND_DOWN": 23,
+    "CHOP": 52
+   }
+  }
+ },
+ {
+  "ticker": "HSY",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 2,
+  "freq": {
+   "GAP_UP": 0.004,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.338,
+   "TREND_DOWN": 0.488,
+   "CHOP": 0.17
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 0.84,
+   "TREND_DOWN": 0.897,
+   "CHOP": 0.537
+  },
+  "baseline": {
+   "GAP_UP": 0.005,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.337,
+   "TREND_DOWN": 0.486,
+   "CHOP": 0.168
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 6.3,
+   "TREND_DOWN": 9.8,
+   "CHOP": 2.2
+  },
+  "up_to_down": 0.031,
+  "chop_resolves_up": 0.22,
+  "chop_resolves_down": 0.244,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.5,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.5
+   },
+   "GAP_DOWN": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.006,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.84,
+    "TREND_DOWN": 0.031,
+    "CHOP": 0.123
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.004,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.026,
+    "TREND_DOWN": 0.897,
+    "CHOP": 0.073
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.22,
+    "TREND_DOWN": 0.244,
+    "CHOP": 0.537
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 137,
+    "TREND_DOWN": 5,
+    "CHOP": 20
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 6,
+    "TREND_DOWN": 210,
+    "CHOP": 17
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 18,
+    "TREND_DOWN": 20,
+    "CHOP": 44
+   }
+  }
+ },
+ {
+  "ticker": "HPE",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 14,
+  "freq": {
+   "GAP_UP": 0.017,
+   "GAP_DOWN": 0.012,
+   "TREND_UP": 0.533,
+   "TREND_DOWN": 0.28,
+   "CHOP": 0.158
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.875,
+   "TREND_DOWN": 0.822,
+   "CHOP": 0.5
+  },
+  "baseline": {
+   "GAP_UP": 0.018,
+   "GAP_DOWN": 0.017,
+   "TREND_UP": 0.535,
+   "TREND_DOWN": 0.282,
+   "CHOP": 0.165
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 8.0,
+   "TREND_DOWN": 5.6,
+   "CHOP": 2.0
+  },
+  "up_to_down": 0.016,
+  "chop_resolves_up": 0.276,
+  "chop_resolves_down": 0.184,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.75,
+    "TREND_DOWN": 0.25,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.167,
+    "TREND_DOWN": 0.667,
+    "CHOP": 0.167
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.023,
+    "GAP_DOWN": 0.008,
+    "TREND_UP": 0.875,
+    "TREND_DOWN": 0.016,
+    "CHOP": 0.078
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.015,
+    "GAP_DOWN": 0.007,
+    "TREND_UP": 0.037,
+    "TREND_DOWN": 0.822,
+    "CHOP": 0.119
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.039,
+    "TREND_UP": 0.276,
+    "TREND_DOWN": 0.184,
+    "CHOP": 0.5
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 6,
+    "TREND_DOWN": 2,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 4,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 6,
+    "GAP_DOWN": 2,
+    "TREND_UP": 224,
+    "TREND_DOWN": 4,
+    "CHOP": 20
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 1,
+    "TREND_UP": 5,
+    "TREND_DOWN": 111,
+    "CHOP": 16
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 3,
+    "TREND_UP": 21,
+    "TREND_DOWN": 14,
+    "CHOP": 38
+   }
+  }
+ },
+ {
+  "ticker": "GBX",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 5,
+  "freq": {
+   "GAP_UP": 0.008,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.432,
+   "TREND_DOWN": 0.367,
+   "CHOP": 0.191
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.87,
+   "TREND_DOWN": 0.842,
+   "CHOP": 0.565
+  },
+  "baseline": {
+   "GAP_UP": 0.007,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.43,
+   "TREND_DOWN": 0.368,
+   "CHOP": 0.189
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 7.7,
+   "TREND_DOWN": 6.3,
+   "CHOP": 2.3
+  },
+  "up_to_down": 0.024,
+  "chop_resolves_up": 0.207,
+  "chop_resolves_down": 0.228,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.019,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.87,
+    "TREND_DOWN": 0.024,
+    "CHOP": 0.087
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.006,
+    "TREND_UP": 0.028,
+    "TREND_DOWN": 0.842,
+    "CHOP": 0.124
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.207,
+    "TREND_DOWN": 0.228,
+    "CHOP": 0.565
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 4,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 4,
+    "GAP_DOWN": 0,
+    "TREND_UP": 180,
+    "TREND_DOWN": 5,
+    "CHOP": 18
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 5,
+    "TREND_DOWN": 149,
+    "CHOP": 22
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 19,
+    "TREND_DOWN": 21,
+    "CHOP": 52
+   }
+  }
+ },
+ {
+  "ticker": "EWZ",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 1,
+  "freq": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.467,
+   "TREND_DOWN": 0.371,
+   "CHOP": 0.16
+  },
+  "persist": {
+   "GAP_UP": null,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.942,
+   "TREND_DOWN": 0.888,
+   "CHOP": 0.636
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.466,
+   "TREND_DOWN": 0.369,
+   "CHOP": 0.158
+  },
+  "duration": {
+   "GAP_UP": null,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 17.2,
+   "TREND_DOWN": 9.0,
+   "CHOP": 2.8
+  },
+  "up_to_down": 0.013,
+  "chop_resolves_up": 0.156,
+  "chop_resolves_down": 0.208,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.004,
+    "TREND_UP": 0.942,
+    "TREND_DOWN": 0.013,
+    "CHOP": 0.04
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.006,
+    "TREND_DOWN": 0.888,
+    "CHOP": 0.106
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.156,
+    "TREND_DOWN": 0.208,
+    "CHOP": 0.636
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 211,
+    "TREND_DOWN": 3,
+    "CHOP": 9
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 159,
+    "CHOP": 19
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 12,
+    "TREND_DOWN": 16,
+    "CHOP": 49
+   }
+  }
+ },
+ {
+  "ticker": "DNUT",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 13,
+  "freq": {
+   "GAP_UP": 0.017,
+   "GAP_DOWN": 0.01,
+   "TREND_UP": 0.293,
+   "TREND_DOWN": 0.523,
+   "CHOP": 0.158
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.816,
+   "TREND_DOWN": 0.9,
+   "CHOP": 0.474
+  },
+  "baseline": {
+   "GAP_UP": 0.012,
+   "GAP_DOWN": 0.006,
+   "TREND_UP": 0.29,
+   "TREND_DOWN": 0.523,
+   "CHOP": 0.153
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 5.4,
+   "TREND_DOWN": 10.0,
+   "CHOP": 1.9
+  },
+  "up_to_down": 0.014,
+  "chop_resolves_up": 0.211,
+  "chop_resolves_down": 0.276,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.625,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.375
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 0.6,
+    "CHOP": 0.4
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.021,
+    "GAP_DOWN": 0.021,
+    "TREND_UP": 0.816,
+    "TREND_DOWN": 0.014,
+    "CHOP": 0.128
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.016,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.016,
+    "TREND_DOWN": 0.9,
+    "CHOP": 0.068
+   },
+   "CHOP": {
+    "GAP_UP": 0.013,
+    "GAP_DOWN": 0.026,
+    "TREND_UP": 0.211,
+    "TREND_DOWN": 0.276,
+    "CHOP": 0.474
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 5,
+    "TREND_DOWN": 0,
+    "CHOP": 3
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 3,
+    "CHOP": 2
+   },
+   "TREND_UP": {
+    "GAP_UP": 3,
+    "GAP_DOWN": 3,
+    "TREND_UP": 115,
+    "TREND_DOWN": 2,
+    "CHOP": 18
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 4,
+    "GAP_DOWN": 0,
+    "TREND_UP": 4,
+    "TREND_DOWN": 226,
+    "CHOP": 17
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 16,
+    "TREND_DOWN": 21,
+    "CHOP": 36
+   }
+  }
+ },
+ {
+  "ticker": "DE",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 2,
+  "freq": {
+   "GAP_UP": 0.002,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.473,
+   "TREND_DOWN": 0.336,
+   "CHOP": 0.187
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.829,
+   "TREND_DOWN": 0.772,
+   "CHOP": 0.517
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.473,
+   "TREND_DOWN": 0.333,
+   "CHOP": 0.188
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 5.8,
+   "TREND_DOWN": 4.4,
+   "CHOP": 2.1
+  },
+  "up_to_down": 0.079,
+  "chop_resolves_up": 0.281,
+  "chop_resolves_down": 0.202,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.004,
+    "GAP_DOWN": 0.004,
+    "TREND_UP": 0.829,
+    "TREND_DOWN": 0.079,
+    "CHOP": 0.083
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.074,
+    "TREND_DOWN": 0.772,
+    "CHOP": 0.154
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.281,
+    "TREND_DOWN": 0.202,
+    "CHOP": 0.517
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 189,
+    "TREND_DOWN": 18,
+    "CHOP": 19
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 12,
+    "TREND_DOWN": 125,
+    "CHOP": 25
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 25,
+    "TREND_DOWN": 18,
+    "CHOP": 46
+   }
+  }
+ },
+ {
+  "ticker": "CTVA",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 1,
+  "freq": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.002,
+   "TREND_UP": 0.548,
+   "TREND_DOWN": 0.274,
+   "CHOP": 0.176
+  },
+  "persist": {
+   "GAP_UP": null,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.905,
+   "TREND_DOWN": 0.894,
+   "CHOP": 0.588
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.545,
+   "TREND_DOWN": 0.271,
+   "CHOP": 0.171
+  },
+  "duration": {
+   "GAP_UP": null,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 10.5,
+   "TREND_DOWN": 9.4,
+   "CHOP": 2.4
+  },
+  "up_to_down": 0.011,
+  "chop_resolves_up": 0.282,
+  "chop_resolves_down": 0.129,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 1.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.004,
+    "TREND_UP": 0.905,
+    "TREND_DOWN": 0.011,
+    "CHOP": 0.08
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.008,
+    "TREND_DOWN": 0.894,
+    "CHOP": 0.098
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.282,
+    "TREND_DOWN": 0.129,
+    "CHOP": 0.588
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 238,
+    "TREND_DOWN": 3,
+    "CHOP": 21
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 118,
+    "CHOP": 13
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 24,
+    "TREND_DOWN": 11,
+    "CHOP": 50
+   }
+  }
+ },
+ {
+  "ticker": "CSX",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 2,
+  "freq": {
+   "GAP_UP": 0.004,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.566,
+   "TREND_DOWN": 0.32,
+   "CHOP": 0.11
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 0.908,
+   "TREND_DOWN": 0.896,
+   "CHOP": 0.509
+  },
+  "baseline": {
+   "GAP_UP": 0.003,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.564,
+   "TREND_DOWN": 0.316,
+   "CHOP": 0.11
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": null,
+   "TREND_UP": 10.9,
+   "TREND_DOWN": 9.6,
+   "CHOP": 2.0
+  },
+  "up_to_down": 0.033,
+  "chop_resolves_up": 0.358,
+  "chop_resolves_down": 0.132,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.007,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.908,
+    "TREND_DOWN": 0.033,
+    "CHOP": 0.051
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.032,
+    "TREND_DOWN": 0.896,
+    "CHOP": 0.071
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.358,
+    "TREND_DOWN": 0.132,
+    "CHOP": 0.509
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 2,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 0,
+    "TREND_UP": 247,
+    "TREND_DOWN": 9,
+    "CHOP": 14
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 5,
+    "TREND_DOWN": 138,
+    "CHOP": 11
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 19,
+    "TREND_DOWN": 7,
+    "CHOP": 27
+   }
+  }
+ },
+ {
+  "ticker": "CC=F",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 484,
+  "gap_days": 21,
+  "freq": {
+   "GAP_UP": 0.023,
+   "GAP_DOWN": 0.021,
+   "TREND_UP": 0.345,
+   "TREND_DOWN": 0.45,
+   "CHOP": 0.161
+  },
+  "persist": {
+   "GAP_UP": 0.182,
+   "GAP_DOWN": 0.1,
+   "TREND_UP": 0.784,
+   "TREND_DOWN": 0.872,
+   "CHOP": 0.494
+  },
+  "baseline": {
+   "GAP_UP": 0.018,
+   "GAP_DOWN": 0.022,
+   "TREND_UP": 0.343,
+   "TREND_DOWN": 0.447,
+   "CHOP": 0.166
+  },
+  "duration": {
+   "GAP_UP": 1.2,
+   "GAP_DOWN": 1.1,
+   "TREND_UP": 4.6,
+   "TREND_DOWN": 7.8,
+   "CHOP": 2.0
+  },
+  "up_to_down": 0.03,
+  "chop_resolves_up": 0.286,
+  "chop_resolves_down": 0.195,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.182,
+    "GAP_DOWN": 0.091,
+    "TREND_UP": 0.455,
+    "TREND_DOWN": 0.182,
+    "CHOP": 0.091
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.1,
+    "TREND_UP": 0.3,
+    "TREND_DOWN": 0.6,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.03,
+    "GAP_DOWN": 0.018,
+    "TREND_UP": 0.784,
+    "TREND_DOWN": 0.03,
+    "CHOP": 0.138
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.009,
+    "GAP_DOWN": 0.023,
+    "TREND_UP": 0.023,
+    "TREND_DOWN": 0.872,
+    "CHOP": 0.073
+   },
+   "CHOP": {
+    "GAP_UP": 0.026,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.286,
+    "TREND_DOWN": 0.195,
+    "CHOP": 0.494
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 1,
+    "TREND_UP": 5,
+    "TREND_DOWN": 2,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 3,
+    "TREND_DOWN": 6,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 5,
+    "GAP_DOWN": 3,
+    "TREND_UP": 131,
+    "TREND_DOWN": 5,
+    "CHOP": 23
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 5,
+    "TREND_UP": 5,
+    "TREND_DOWN": 190,
+    "CHOP": 16
+   },
+   "CHOP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 0,
+    "TREND_UP": 22,
+    "TREND_DOWN": 15,
+    "CHOP": 38
+   }
+  }
+ },
+ {
+  "ticker": "BG",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 3,
+  "freq": {
+   "GAP_UP": 0.002,
+   "GAP_DOWN": 0.004,
+   "TREND_UP": 0.432,
+   "TREND_DOWN": 0.355,
+   "CHOP": 0.207
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.865,
+   "TREND_DOWN": 0.819,
+   "CHOP": 0.57
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.434,
+   "TREND_DOWN": 0.358,
+   "CHOP": 0.212
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 7.4,
+   "TREND_DOWN": 5.5,
+   "CHOP": 2.3
+  },
+  "up_to_down": 0.034,
+  "chop_resolves_up": 0.2,
+  "chop_resolves_down": 0.22,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 1.0,
+    "TREND_DOWN": 0.0,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 0.5,
+    "CHOP": 0.5
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.005,
+    "TREND_UP": 0.865,
+    "TREND_DOWN": 0.034,
+    "CHOP": 0.097
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.006,
+    "TREND_UP": 0.047,
+    "TREND_DOWN": 0.819,
+    "CHOP": 0.129
+   },
+   "CHOP": {
+    "GAP_UP": 0.01,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.2,
+    "TREND_DOWN": 0.22,
+    "CHOP": 0.57
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 1,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 179,
+    "TREND_DOWN": 7,
+    "CHOP": 20
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 8,
+    "TREND_DOWN": 140,
+    "CHOP": 22
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 20,
+    "TREND_DOWN": 22,
+    "CHOP": 57
+   }
+  }
+ },
+ {
+  "ticker": "AVGO",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 16,
+  "freq": {
+   "GAP_UP": 0.019,
+   "GAP_DOWN": 0.015,
+   "TREND_UP": 0.496,
+   "TREND_DOWN": 0.305,
+   "CHOP": 0.166
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.87,
+   "TREND_DOWN": 0.81,
+   "CHOP": 0.512
+  },
+  "baseline": {
+   "GAP_UP": 0.014,
+   "GAP_DOWN": 0.01,
+   "TREND_UP": 0.496,
+   "TREND_DOWN": 0.306,
+   "CHOP": 0.164
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 7.7,
+   "TREND_DOWN": 5.2,
+   "CHOP": 2.1
+  },
+  "up_to_down": 0.013,
+  "chop_resolves_up": 0.225,
+  "chop_resolves_down": 0.225,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.667,
+    "TREND_DOWN": 0.111,
+    "CHOP": 0.222
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 0.857,
+    "CHOP": 0.143
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.017,
+    "GAP_DOWN": 0.013,
+    "TREND_UP": 0.87,
+    "TREND_DOWN": 0.013,
+    "CHOP": 0.088
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.027,
+    "GAP_DOWN": 0.014,
+    "TREND_UP": 0.048,
+    "TREND_DOWN": 0.81,
+    "CHOP": 0.102
+   },
+   "CHOP": {
+    "GAP_UP": 0.013,
+    "GAP_DOWN": 0.025,
+    "TREND_UP": 0.225,
+    "TREND_DOWN": 0.225,
+    "CHOP": 0.512
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 6,
+    "TREND_DOWN": 1,
+    "CHOP": 2
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 6,
+    "CHOP": 1
+   },
+   "TREND_UP": {
+    "GAP_UP": 4,
+    "GAP_DOWN": 3,
+    "TREND_UP": 207,
+    "TREND_DOWN": 3,
+    "CHOP": 21
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 4,
+    "GAP_DOWN": 2,
+    "TREND_UP": 7,
+    "TREND_DOWN": 119,
+    "CHOP": 15
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 18,
+    "TREND_DOWN": 18,
+    "CHOP": 41
+   }
+  }
+ },
+ {
+  "ticker": "AMD",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 26,
+  "freq": {
+   "GAP_UP": 0.023,
+   "GAP_DOWN": 0.031,
+   "TREND_UP": 0.461,
+   "TREND_DOWN": 0.353,
+   "CHOP": 0.133
+  },
+  "persist": {
+   "GAP_UP": 0.091,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.856,
+   "TREND_DOWN": 0.858,
+   "CHOP": 0.578
+  },
+  "baseline": {
+   "GAP_UP": 0.018,
+   "GAP_DOWN": 0.031,
+   "TREND_UP": 0.461,
+   "TREND_DOWN": 0.349,
+   "CHOP": 0.127
+  },
+  "duration": {
+   "GAP_UP": 1.1,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 6.9,
+   "TREND_DOWN": 7.0,
+   "CHOP": 2.4
+  },
+  "up_to_down": 0.014,
+  "chop_resolves_up": 0.219,
+  "chop_resolves_down": 0.172,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.091,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.636,
+    "TREND_DOWN": 0.182,
+    "CHOP": 0.091
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.267,
+    "TREND_DOWN": 0.6,
+    "CHOP": 0.133
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.032,
+    "GAP_DOWN": 0.036,
+    "TREND_UP": 0.856,
+    "TREND_DOWN": 0.014,
+    "CHOP": 0.063
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.012,
+    "GAP_DOWN": 0.036,
+    "TREND_UP": 0.036,
+    "TREND_DOWN": 0.858,
+    "CHOP": 0.059
+   },
+   "CHOP": {
+    "GAP_UP": 0.016,
+    "GAP_DOWN": 0.016,
+    "TREND_UP": 0.219,
+    "TREND_DOWN": 0.172,
+    "CHOP": 0.578
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 0,
+    "TREND_UP": 7,
+    "TREND_DOWN": 2,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 4,
+    "TREND_DOWN": 9,
+    "CHOP": 2
+   },
+   "TREND_UP": {
+    "GAP_UP": 7,
+    "GAP_DOWN": 8,
+    "TREND_UP": 190,
+    "TREND_DOWN": 3,
+    "CHOP": 14
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 6,
+    "TREND_UP": 6,
+    "TREND_DOWN": 145,
+    "CHOP": 10
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 14,
+    "TREND_DOWN": 11,
+    "CHOP": 37
+   }
+  }
+ },
+ {
+  "ticker": "AMAT",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 24,
+  "freq": {
+   "GAP_UP": 0.025,
+   "GAP_DOWN": 0.025,
+   "TREND_UP": 0.496,
+   "TREND_DOWN": 0.29,
+   "CHOP": 0.164
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.833,
+   "TREND_DOWN": 0.835,
+   "CHOP": 0.519
+  },
+  "baseline": {
+   "GAP_UP": 0.031,
+   "GAP_DOWN": 0.018,
+   "TREND_UP": 0.491,
+   "TREND_DOWN": 0.287,
+   "CHOP": 0.159
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 6.0,
+   "TREND_DOWN": 6.0,
+   "CHOP": 2.1
+  },
+  "up_to_down": 0.008,
+  "chop_resolves_up": 0.253,
+  "chop_resolves_down": 0.165,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.75,
+    "TREND_DOWN": 0.167,
+    "CHOP": 0.083
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.25,
+    "TREND_DOWN": 0.583,
+    "CHOP": 0.167
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.038,
+    "GAP_DOWN": 0.029,
+    "TREND_UP": 0.833,
+    "TREND_DOWN": 0.008,
+    "CHOP": 0.092
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.007,
+    "GAP_DOWN": 0.014,
+    "TREND_UP": 0.05,
+    "TREND_DOWN": 0.835,
+    "CHOP": 0.094
+   },
+   "CHOP": {
+    "GAP_UP": 0.025,
+    "GAP_DOWN": 0.038,
+    "TREND_UP": 0.253,
+    "TREND_DOWN": 0.165,
+    "CHOP": 0.519
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 9,
+    "TREND_DOWN": 2,
+    "CHOP": 1
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 3,
+    "TREND_DOWN": 7,
+    "CHOP": 2
+   },
+   "TREND_UP": {
+    "GAP_UP": 9,
+    "GAP_DOWN": 7,
+    "TREND_UP": 199,
+    "TREND_DOWN": 2,
+    "CHOP": 22
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 2,
+    "TREND_UP": 7,
+    "TREND_DOWN": 116,
+    "CHOP": 13
+   },
+   "CHOP": {
+    "GAP_UP": 2,
+    "GAP_DOWN": 3,
+    "TREND_UP": 20,
+    "TREND_DOWN": 13,
+    "CHOP": 41
+   }
+  }
+ },
+ {
+  "ticker": "ADM",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 3,
+  "freq": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.006,
+   "TREND_UP": 0.471,
+   "TREND_DOWN": 0.328,
+   "CHOP": 0.195
+  },
+  "persist": {
+   "GAP_UP": null,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.841,
+   "TREND_DOWN": 0.804,
+   "CHOP": 0.479
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.007,
+   "TREND_UP": 0.472,
+   "TREND_DOWN": 0.327,
+   "CHOP": 0.192
+  },
+  "duration": {
+   "GAP_UP": null,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 6.3,
+   "TREND_DOWN": 5.1,
+   "CHOP": 1.9
+  },
+  "up_to_down": 0.044,
+  "chop_resolves_up": 0.33,
+  "chop_resolves_down": 0.191,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": null,
+    "GAP_DOWN": null,
+    "TREND_UP": null,
+    "TREND_DOWN": null,
+    "CHOP": null
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.333,
+    "TREND_DOWN": 0.667,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.004,
+    "TREND_UP": 0.841,
+    "TREND_DOWN": 0.044,
+    "CHOP": 0.111
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.013,
+    "TREND_UP": 0.032,
+    "TREND_DOWN": 0.804,
+    "CHOP": 0.152
+   },
+   "CHOP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.33,
+    "TREND_DOWN": 0.191,
+    "CHOP": 0.479
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 0,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 2,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 1,
+    "TREND_UP": 190,
+    "TREND_DOWN": 10,
+    "CHOP": 25
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 2,
+    "TREND_UP": 5,
+    "TREND_DOWN": 127,
+    "CHOP": 24
+   },
+   "CHOP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 31,
+    "TREND_DOWN": 18,
+    "CHOP": 45
+   }
+  }
+ },
+ {
+  "ticker": "AAPL",
+  "run_date": "2026-07-24",
+  "window": "2024-08-21 to 2026-07-24",
+  "n_days": 482,
+  "gap_days": 4,
+  "freq": {
+   "GAP_UP": 0.004,
+   "GAP_DOWN": 0.004,
+   "TREND_UP": 0.517,
+   "TREND_DOWN": 0.293,
+   "CHOP": 0.183
+  },
+  "persist": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.915,
+   "TREND_DOWN": 0.851,
+   "CHOP": 0.636
+  },
+  "baseline": {
+   "GAP_UP": 0.0,
+   "GAP_DOWN": 0.0,
+   "TREND_UP": 0.518,
+   "TREND_DOWN": 0.291,
+   "CHOP": 0.185
+  },
+  "duration": {
+   "GAP_UP": 1.0,
+   "GAP_DOWN": 1.0,
+   "TREND_UP": 11.8,
+   "TREND_DOWN": 6.7,
+   "CHOP": 2.8
+  },
+  "up_to_down": 0.012,
+  "chop_resolves_up": 0.17,
+  "chop_resolves_down": 0.17,
+  "probs": {
+   "GAP_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.5,
+    "TREND_DOWN": 0.5,
+    "CHOP": 0.0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.0,
+    "TREND_DOWN": 1.0,
+    "CHOP": 0.0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0.0,
+    "GAP_DOWN": 0.0,
+    "TREND_UP": 0.915,
+    "TREND_DOWN": 0.012,
+    "CHOP": 0.073
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 0.007,
+    "GAP_DOWN": 0.007,
+    "TREND_UP": 0.035,
+    "TREND_DOWN": 0.851,
+    "CHOP": 0.099
+   },
+   "CHOP": {
+    "GAP_UP": 0.011,
+    "GAP_DOWN": 0.011,
+    "TREND_UP": 0.17,
+    "TREND_DOWN": 0.17,
+    "CHOP": 0.636
+   }
+  },
+  "counts": {
+   "GAP_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 1,
+    "TREND_DOWN": 1,
+    "CHOP": 0
+   },
+   "GAP_DOWN": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 0,
+    "TREND_DOWN": 2,
+    "CHOP": 0
+   },
+   "TREND_UP": {
+    "GAP_UP": 0,
+    "GAP_DOWN": 0,
+    "TREND_UP": 227,
+    "TREND_DOWN": 3,
+    "CHOP": 18
+   },
+   "TREND_DOWN": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 5,
+    "TREND_DOWN": 120,
+    "CHOP": 14
+   },
+   "CHOP": {
+    "GAP_UP": 1,
+    "GAP_DOWN": 1,
+    "TREND_UP": 15,
+    "TREND_DOWN": 15,
+    "CHOP": 56
+   }
+  }
+ }
+]

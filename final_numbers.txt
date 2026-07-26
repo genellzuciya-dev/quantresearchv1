@@ -1,0 +1,73 @@
+
+============================================================================
+  BIOTECH
+============================================================================
+  dropped 2 corrupt row(s): ['OLMA', 'SANA']
+  24 names · 11492 trading days
+
+  BASELINE (any day)   incl flat 46.7%   excl flat 47.8%   (2.17% of days flat)
+
+  TIERS (545 up-gaps >= 3%)
+  tier         n    incl    excl       95% CI (excl)  vs base  flat%  median
+  <1.5x      337   30.9%   31.7% [  26.9,  36.9]   -16.0   2.7%   -1.6%
+  1.5-2x      85   41.2%   41.7% [  31.7,  52.3]    -6.1   1.2%   -1.2%
+  2-3x        56   53.6%   53.6% [  40.7,  66.0]    +5.8   0.0%    0.5%
+  3-5x        32   68.8%   68.8% [  51.4,  82.0]   +21.0   0.0%    4.2%
+  5x+         35   65.7%   67.6% [  50.8,  80.9]   +19.9   2.9%    7.8%
+
+  BY YEAR (excl flat)
+    2024   <1.5x n=  58  28.1%    >=3x n=  13  69.2%
+    2025   <1.5x n= 199  33.0%    >=3x n=  37  69.4%
+    2026   <1.5x n=  80  31.2%    >=3x n=  17  64.7%
+
+  PER NAME at 3x+ (67 gaps, top3 = 28%)
+    CABA      9 gaps   66.7%
+    FATE      5 gaps   80.0%
+    RLAY      5 gaps   60.0%
+    KYMR      5 gaps   60.0%
+    PGEN      5 gaps   60.0%
+    ORIC      4 gaps   50.0%
+    RXRX      4 gaps  100.0%
+    RCKT      4 gaps   75.0%
+
+  ISOLATED vs CLUSTER at 3x+ (threshold 4 names, excl flat)
+    isolated  n=  57   71.4% [ 58.5, 81.6]
+    cluster   n=  10   50.0% [ 23.7, 76.3]
+
+============================================================================
+  AI_TECH
+============================================================================
+  dropped 1 corrupt row(s): ['PRSO']
+  21 names · 10073 trading days
+
+  BASELINE (any day)   incl flat 43.8%   excl flat 45.2%   (3.07% of days flat)
+
+  TIERS (1228 up-gaps >= 3%)
+  tier         n    incl    excl       95% CI (excl)  vs base  flat%  median
+  <1.5x      775   32.3%   32.9% [  29.6,  36.3]   -12.3   1.9%   -2.2%
+  1.5-2x     147   51.0%   51.4% [  43.3,  59.3]    +6.2   0.7%    0.1%
+  2-3x       133   56.4%   56.8% [  48.3,  65.0]   +11.6   0.8%    1.3%
+  3-5x        91   61.5%   62.2% [  51.9,  71.5]   +17.0   1.1%    4.7%
+  5x+         81   65.4%   66.2% [  55.4,  75.7]   +21.0   1.2%    5.8%
+
+  BY YEAR (excl flat)
+    2024   <1.5x n= 109  17.6%    >=3x n=  55  66.7%
+    2025   <1.5x n= 468  31.7%    >=3x n=  72  65.3%
+    2026   <1.5x n= 198  44.4%    >=3x n=  46  57.8%
+
+  PER NAME at 3x+ (173 gaps, top3 = 28%)
+    ARBE     17 gaps   52.9%
+    CXAI     17 gaps   50.0%
+    LAES     14 gaps   50.0%
+    RGTI     14 gaps   71.4%
+    KSCP     13 gaps   53.8%
+    POET     12 gaps   83.3%
+    PRSO     11 gaps   63.6%
+    QBTS     10 gaps   77.8%
+
+  ISOLATED vs CLUSTER at 3x+ (threshold 4 names, excl flat)
+    isolated  n=  72   59.2% [ 47.5, 69.8]
+    cluster   n= 101   67.0% [ 57.3, 75.4]
+
+done.
+
